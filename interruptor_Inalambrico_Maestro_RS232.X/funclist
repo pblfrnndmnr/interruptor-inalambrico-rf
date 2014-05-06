@@ -1,0 +1,22 @@
+__stringtab: STRING, 606 0 6
+__stringdata: STRING, 620 0 27
+_putch: CODE, 736 0 6
+_envia_mensaje_crc: CODE, 729 0 7
+_strlen: CODE, 700 0 16
+_ConfigureOscillator: CODE, 742 0 1
+_main: CODE, 464 0 56
+_send_packet: CODE, 520 0 44
+_configura_USART: CODE, 716 0 13
+_calcula_CRC16: CODE, 387 0 77
+_InitApp: CODE, 647 0 27
+__initialization: CODE, 11 0 42
+___lwdiv: CODE, 564 0 42
+_isr: CODE, 674 0 26
+_hexpowers: STRING, 612 0 8
+_printf: CODE, 197 0 109
+PL2: CODE, 148 0 29
+PL4: CODE, 177 0 15
+_CRC16: CODE, 306 0 81
+_generate_16bit_crc: CODE, 55 0 93
+PL6: CODE, 192 0 5
+Total: 730
