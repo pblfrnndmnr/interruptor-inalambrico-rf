@@ -1,0 +1,8 @@
+_ConfigureOscillator: CODE, 164 0 3
+_main: CODE, 87 0 32
+_configura_USART: CODE, 150 0 10
+_InitApp: CODE, 119 0 31
+__initialization: CODE, 13 0 5
+_isr: CODE, 20 0 67
+_getch: CODE, 167 0 2
+Total: 150

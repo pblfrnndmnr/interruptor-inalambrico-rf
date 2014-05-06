@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<TITLE>Listing of main.c</TITLE>
+<LINK rel=stylesheet href="udf_styles.css" type="text/css">
+</HEAD>
+<BODY>
+<table class="">
+<tr><td><code><i>     1</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>     2</i> </code></td><td><code>&nbsp /*&nbsp Interruptor&nbsp inalámbrico</code></td></tr>
+<tr><td><code><i>     3</i> </code></td><td><code>&nbsp &nbsp Autor:Ing.&nbsp Pablo&nbsp Fernando&nbsp Manieri</code></td></tr>
+<tr><td><code><i>     4</i> </code></td><td><code>&nbsp &nbsp Fecha:&nbsp 27/04/2014</code></td></tr>
+<tr><td><code><i>     5</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>     6</i> </code></td><td><code>&nbsp &nbsp Funcionamiento&nbsp modo&nbsp maestro:</code></td></tr>
+<tr><td><code><i>     7</i> </code></td><td><code>&nbsp &nbsp El&nbsp pic&nbsp controla&nbsp el&nbsp encendido&nbsp del&nbsp modulo&nbsp RF&nbsp y&nbsp además&nbsp codifica&nbsp los&nbsp datos&nbsp a&nbsp enviar</code></td></tr>
+<tr><td><code><i>     8</i> </code></td><td><code>&nbsp &nbsp por&nbsp el&nbsp HT12E.</code></td></tr>
+<tr><td><code><i>     9</i> </code></td><td><code>&nbsp &nbsp Cuando&nbsp se&nbsp pulsa&nbsp el&nbsp boton&nbsp de&nbsp encendido,&nbsp se&nbsp enciende&nbsp el&nbsp modulo&nbsp RF,&nbsp se&nbsp esperan</code></td></tr>
+<tr><td><code><i>    10</i> </code></td><td><code>&nbsp &nbsp como&nbsp mínimo&nbsp 40us&nbsp y&nbsp luego&nbsp se&nbsp habilita&nbsp el&nbsp HT12e&nbsp para&nbsp transmitir&nbsp los&nbsp datos,</code></td></tr>
+<tr><td><code><i>    11</i> </code></td><td><code>&nbsp &nbsp una&nbsp vez&nbsp que&nbsp finaliza&nbsp se&nbsp deshabilita&nbsp el&nbsp modulo&nbsp y&nbsp entra&nbsp en&nbsp un&nbsp SLEEP&nbsp hata&nbsp que&nbsp se</code></td></tr>
+<tr><td><code><i>    12</i> </code></td><td><code>&nbsp &nbsp pulse&nbsp nuevamente.*/</code></td></tr>
+<tr><td><code><i>    13</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    14</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    15</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    16</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    17</i> </code></td><td><code>&nbsp /*&nbsp Files&nbsp to&nbsp Include&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>    18</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    19</i> </code></td><td><code>&nbsp #ifndef&nbsp __PICCPRO__</code></td></tr>
+<tr><td><code><i>    20</i> </code></td><td><code>&nbsp #define&nbsp __PICCPRO__</code></td></tr>
+<tr><td><code><i>    21</i> </code></td><td><code>&nbsp #endif</code></td></tr>
+<tr><td><code><i>    22</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    23</i> </code></td><td><code>&nbsp #if&nbsp defined(__XC)</code></td></tr>
+<tr><td><code><i>    24</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  xc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp XC8&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>    25</i> </code></td><td><code>&nbsp #elif&nbsp defined(HI_TECH_C)</code></td></tr>
+<tr><td><code><i>    26</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  htc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp HiTech&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>    27</i> </code></td><td><code>&nbsp #endif</code></td></tr>
+<tr><td><code><i>    28</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    29</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdint.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp uint8_t&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    30</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdbool.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp true/false&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    31</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    32</i> </code></td><td><code>&nbsp #include&nbsp "system.h"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp System&nbsp funct/params,&nbsp like&nbsp osc/peripheral&nbsp config&nbsp */</code></td></tr>
+<tr><td><code><i>    33</i> </code></td><td><code>&nbsp #include&nbsp "user.h"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp User&nbsp funct/params,&nbsp such&nbsp as&nbsp InitApp&nbsp */</code></td></tr>
+<tr><td><code><i>    34</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    35</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    36</i> </code></td><td><code>&nbsp /*&nbsp User&nbsp Global&nbsp Variable&nbsp Declaration&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>    37</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    38</i> </code></td><td><code>&nbsp //#define&nbsp TransmisorON&nbsp PORTBbits.RB1</code></td></tr>
+<tr><td><code><i>    39</i> </code></td><td><code>&nbsp //#define&nbsp TE_HT12E&nbsp PORTBbits.RB2</code></td></tr>
+<tr><td><code><i>    40</i> </code></td><td><code>&nbsp bool&nbsp Bandera_boton_pulsado;</code></td></tr>
+<tr><td><code><i>    41</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    42</i> </code></td><td><code>&nbsp /*&nbsp i.e.&nbsp uint8_t&nbsp&lsaquo  variable_name&rsaquo  ;&nbsp */</code></td></tr>
+<tr><td><code><i>    43</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    44</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    45</i> </code></td><td><code>&nbsp /*&nbsp Main&nbsp Program&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>    46</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    47</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    48</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    49</i> </code></td><td><code>&nbsp void&nbsp main(void)</code></td></tr>
+<tr><td><code><i>    50</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>    51</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp Configure&nbsp the&nbsp oscillator&nbsp for&nbsp the&nbsp device&nbsp */</code></td></tr>
+<tr><td><code><i>    52</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp ConfigureOscillator();</code></td></tr>
+<tr><td><code><i>    53</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    54</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp Initialize&nbsp I/O&nbsp and&nbsp Peripherals&nbsp for&nbsp application&nbsp */</code></td></tr>
+<tr><td><code><i>    55</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp InitApp();</code></td></tr>
+<tr><td><code><i>    56</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //TE_HT12E=1;</code></td></tr>
+<tr><td><code><i>    57</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp __delay_ms(10);</code></td></tr>
+<tr><td><code><i>    58</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    59</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp while(1)</code></td></tr>
+<tr><td><code><i>    60</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp {</code></td></tr>
+<tr><td><code><i>    61</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp if&nbsp (Bandera_boton_pulsado){&nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    62</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Deshabilito&nbsp la&nbsp interrupcion&nbsp del&nbsp RB0</code></td></tr>
+<tr><td><code><i>    63</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp INTCONbits.INTE=0;</code></td></tr>
+<tr><td><code><i>    64</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Habilito&nbsp transmisor</code></td></tr>
+<tr><td><code><i>    65</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TransmisorON=1;</code></td></tr>
+<tr><td><code><i>    66</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Espero&nbsp a&nbsp que&nbsp se&nbsp inicie&nbsp correctamente&nbsp el&nbsp transmisor&nbsp minimo&nbsp 40us&nbsp (no&nbsp verificado)</code></td></tr>
+<tr><td><code><i>    67</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp __delay_ms(1);</code></td></tr>
+<tr><td><code><i>    68</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Habilito&nbsp la&nbsp transmision&nbsp de&nbsp datos</code></td></tr>
+<tr><td><code><i>    69</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //configuro&nbsp datos&nbsp a&nbsp enviar&nbsp (solo&nbsp se&nbsp usa&nbsp el&nbsp nibble&nbsp alto)</code></td></tr>
+<tr><td><code><i>    70</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    71</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PORTB=(0x0F&PORTB)|datos;</code></td></tr>
+<tr><td><code><i>    72</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TE_HT12E=0;</code></td></tr>
+<tr><td><code><i>    73</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*Para&nbsp que&nbsp el&nbsp encoder&nbsp comience&nbsp a&nbsp enviar&nbsp los&nbsp datos,&nbsp debo&nbsp mantener&nbsp el&nbsp pin</code></td></tr>
+<tr><td><code><i>    74</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp de&nbsp habilitacion&nbsp en&nbsp bajo&nbsp no&nbsp mas&nbsp de&nbsp una&nbsp palabra&nbsp completa,&nbsp por&nbsp lo&nbsp tanto&nbsp a&nbsp 3Khz</code></td></tr>
+<tr><td><code><i>    75</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp sería&nbsp un&nbsp tiempo&nbsp maximo&nbsp de&nbsp 4bits/3000=1.33ms&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>    76</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp __delay_us(500);</code></td></tr>
+<tr><td><code><i>    77</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TE_HT12E=1;</code></td></tr>
+<tr><td><code><i>    78</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*Espero&nbsp que&nbsp se&nbsp transmitan&nbsp todos&nbsp los&nbsp datos&nbsp a&nbsp 3Khz,&nbsp son&nbsp 4&nbsp Bytes,</code></td></tr>
+<tr><td><code><i>    79</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp o&nbsp sea&nbsp 32&nbsp bits,&nbsp tarda&nbsp ~10.66ms*/</code></td></tr>
+<tr><td><code><i>    80</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp __delay_ms(15);</code></td></tr>
+<tr><td><code><i>    81</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TransmisorON=0;</code></td></tr>
+<tr><td><code><i>    82</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bandera_boton_pulsado=false;</code></td></tr>
+<tr><td><code><i>    83</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Borro&nbsp el&nbsp flag&nbsp de&nbsp interrupcion</code></td></tr>
+<tr><td><code><i>    84</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp INTCONbits.INTF=0;</code></td></tr>
+<tr><td><code><i>    85</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Habilito&nbsp nievamente&nbsp la&nbsp interrupcion&nbsp RB0</code></td></tr>
+<tr><td><code><i>    86</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp INTCONbits.INTE=1;</code></td></tr>
+<tr><td><code><i>    87</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Pongo&nbsp a&nbsp dormir&nbsp al&nbsp sistema&nbsp hasta&nbsp una&nbsp nueva&nbsp pulsación&nbsp para&nbsp ahorrar&nbsp energia</code></td></tr>
+<tr><td><code><i>    88</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SLEEP();</code></td></tr>
+<tr><td><code><i>    89</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>    90</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>    91</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    92</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>    93</i> </code></td><td><code>&nbsp </code></code></BODY>
+</HTML>
