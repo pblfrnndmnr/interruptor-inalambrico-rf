@@ -64,145 +64,24 @@
 
 #include "crc_maestro.h"
 
-// CONSTANTS
-#define MACHINE_ADDRESS 0x31
-#define SEND_ADDRESS    0x32
-#define ACK             0x01
-#define NACK            0xFF
-#define BUFFER_SIZE     9
-
-// GLOBAL VARIABLES
-int packet_buffer[BUFFER_SIZE];
-
-char paquete[]="123456789";
-
 // SEND_PACKET
-// function to send a packet of data to another PIC
-void send_packet(char* packet_ptr, int packet_length)
+// Funcion que envia el paquete al otro pic, codificado con CRC
+void calcula_mensaje_crc(char* packet_ptr)
 {
-   char *ptr;
+   //char *ptr;
   unsigned int  CRC;
-   unsigned int i;
-   ptr = packet_ptr;                            // set pointer
-   i= bit_test(0b0111111111111111,15);
-   CRC = generate_16bit_crc(ptr, packet_length, CRC_CCITT);
-   CRC=calcula_CRC16();
+   //ptr = packet_ptr;                            // set pointer
+   //CRC = generate_16bit_crc(ptr, packet_length, CRC_CCITT);
+   CRC=calcula_CRC16(packet_ptr,CRC_16_INV,INIVAL_CRC_16);
    // make CRC
-   for(i=0; i<packet_length; i++)               // send packet
-      putch(packet_ptr[i]);
+   
 
-   printf("%X",CRC);
+   printf("%s el crc es:%X\n\r",packet_ptr,CRC);
    //putch((int)(CRC>>8));                         // send CRC
    //putch((int)(CRC));
 }
 
 
-
-void envia_mensaje_crc(void)   {
-
-   
-  
-
-       /*  packet_buffer[0] = SEND_ADDRESS;
-         packet_buffer[1] = MACHINE_ADDRESS;
-         packet_buffer[2] = 'H';
-         packet_buffer[3] = 'i';
-         packet_buffer[4] = ' ';
-         packet_buffer[5] = 't';
-         packet_buffer[6] = 'h';
-         packet_buffer[7] = 'e';
-         packet_buffer[8] = 'r';
-         packet_buffer[9] = 'e';
-         packet_buffer[10] = '!';*/
-         send_packet(paquete,9);        // send message
-
-
-   }
-
-int8_t generate_8bit_crc(char* data, int length, int8_t pattern)
-{
-   char   *current_data;
-   int8_t   crc_byte;
-   int byte_counter;
-   int8_t   bit_counter;
-
-   current_data = data;
-   crc_byte = *current_data++;
-
-   for(byte_counter=0; byte_counter < (length-1); byte_counter++)
-   {
-      for(bit_counter=0; bit_counter < 8; bit_counter++)
-      {
-         if(!bit_test(crc_byte,7))
-         {
-            crc_byte <<= 1;
-            bit_test(*current_data, 7 - bit_counter) ?
-               bit_set(crc_byte,0) : bit_clear(crc_byte,0);
-            continue;
-         }
-         crc_byte <<= 1;
-         bit_test(*current_data, 7 - bit_counter) ?
-            bit_set(crc_byte,0) : bit_clear(crc_byte,0);
-         crc_byte ^= pattern;
-      }
-      current_data++;
-   }
-   for(bit_counter=0; bit_counter < 8; bit_counter++)
-   {
-      if(!bit_test(crc_byte,7))
-      {
-         crc_byte <<= 1;
-         continue;
-      }
-      crc_byte <<= 1;
-      crc_byte ^= pattern;
-   }
-   return crc_byte;
-}
-
-
-unsigned int generate_16bit_crc(char* data, unsigned int length,unsigned int pattern)
-{
-   char   *current_data;
-   unsigned int crc_Dbyte;
-   int byte_counter;
-   uint8_t   bit_counter;
-
-   current_data = data + 2;
-   crc_Dbyte =  (data[0] << 8) ||  data[1];
-
-   for(byte_counter=0; byte_counter < (length-2); byte_counter++)
-   {
-      for(bit_counter=0; bit_counter < 8; bit_counter++)
-      {
-         if(!bit_test(crc_Dbyte,15))
-         {
-            crc_Dbyte <<= 1;
-            bit_test(*current_data, 7 - bit_counter) ?
-               bit_set(crc_Dbyte,0) : bit_clear(crc_Dbyte,0);
-            continue;
-         }
-         crc_Dbyte <<= 1;
-         bit_test(*current_data, 7 - bit_counter) ?
-            bit_set(crc_Dbyte,0) : bit_clear(crc_Dbyte,0);
-         crc_Dbyte ^= pattern;
-      }
-      current_data++;
-   }
-
-   for(bit_counter=0; bit_counter < 16; bit_counter++)
-   {
-      if(!bit_test(crc_Dbyte,15))
-      {
-         crc_Dbyte <<= 1;
-         continue;
-      }
-      crc_Dbyte <<= 1;
-      crc_Dbyte ^= pattern;
-   }
-
-   return crc_Dbyte;
-}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -242,19 +121,26 @@ long CRC16(char value, long poly, long init_value, long exit_value){
     return res;
 }
 
-int calcula_CRC16(void)
+int calcula_CRC16(char datos[],long polinomio,long inival)
 {
-    //QCoreApplication a(argc, argv);
-    char datos[]="123456789";
+   
     int i;
-    long inival;
-
-    inival=0x0000;
+ 
     for(i=0;i<strlen(datos);i++){
-        inival=CRC16(datos[i],CRC_CCITT_INV,inival,0x0000);
+        inival=CRC16(datos[i],polinomio,inival,0x0000);
     }
+    switch (polinomio){
+        case CRC_DNP_INV:
+            inival^=0xFFFF; //complemento a 1 del CRC
+            unsigned int aux;
+            aux=(unsigned int)inival;
+            inival=(long)((aux<<8)+(aux>>8)); //invierto los bytes
 
-    inival^=0x0000;
+            break;
+         default:
+            break;
+
+    }
     
     return inival;
 

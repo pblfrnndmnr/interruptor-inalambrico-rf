@@ -66,7 +66,7 @@ void main(void)
     InitApp();
    //TE_HT12E=1;
     //configura_USART();
-    __delay_ms(10);
+   // __delay_ms(10);
 
  /*  int i;
     for (i=1;i<=255;i++){
@@ -77,9 +77,11 @@ void main(void)
  // printf("Codigo enviado: %x%x\n\r", DireccionDispositivo,Encendido);
    
   //printf("Codigo Enviado: %x%x\n\r", DireccionDispositivo,Apagado);
-  
-  
-    envia_mensaje_crc();
+     char enviaEncendido[5]={DireccionDispositivo,Encendido,0xD5, 0xAA};//debo poner el crc al reves sino no da 0 al volver a calcularlo
+    char enviaApagado[5]={DireccionDispositivo,Apagado,0x95,0xA4};//debo poner el crc al reves sino no da 0 al volver a calcularlo
+  //calcula_mensaje_crc(enviaEncendido); //se transmite 1Y,0xD5,0xAA
+   //calcula_mensaje_crc(enviaApagado);//se trnasmite 1N,0x95,0xA4
+    
 while(1)
     {
 
@@ -93,7 +95,13 @@ while(1)
          __delay_ms(1);
            //Habilito la transmision de datos
          //Envio los datos codificados direccion y estado
-         printf("%c%c\n\r", DireccionDispositivo,datos);
+         if (datos==Encendido){
+         printf("%s\n\r", enviaEncendido);
+         }else if(datos==Apagado){
+         printf("%s\n\r", enviaApagado);
+         }
+        
+         
                
         /*TODO Espero que se transmitan todos los datos a 2400b/seg, son 4 Bytes,
         o sea 48 bits, tarda ~20ms*/
