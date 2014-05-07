@@ -63,24 +63,43 @@ void interrupt isr(void)
         switch (indice_de_dato){
             case 0:
                 if (datosrecibidos==DireccionDispositivo){
+                    cadenarecibida[indice_de_dato]=datosrecibidos;
                     indice_de_dato++;
                 }
                 break;
             case 1:
                 if ((datosrecibidos==Encendido)||(datosrecibidos==Apagado)){
+                    cadenarecibida[indice_de_dato]=datosrecibidos;
                     indice_de_dato++;
                 }
 
                 break;
             case 2:
-                if (datosrecibidos=='\n'){
-                    indice_de_dato++;
-                }
+                //if (datosrecibidos=='\n'){
+                cadenarecibida[indice_de_dato]=datosrecibidos;
+                indice_de_dato++;
+             
+                //  }
+                break;
             case 3:
-                if (datosrecibidos=='\r'){
-                      recibi_datos= true;
-                      indice_de_dato=0;
+               // if (datosrecibidos=='\r'){
+               //       recibi_datos= true;
+                cadenarecibida[indice_de_dato]=datosrecibidos;
+                indice_de_dato++;
+               // }
+                break;
+            case 4:
+                if (datosrecibidos=='\n'){
+                  indice_de_dato++;
                 }
+                  break;
+            case 5:
+                if (datosrecibidos=='\r'){
+
+                    recibi_datos= true;
+                      indice_de_dato=3;
+                }
+
 
                 break;
             default:

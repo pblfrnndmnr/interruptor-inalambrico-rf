@@ -36,6 +36,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include "usart1.h"
+#include "crc_esclavo.h"
 
 /******************************************************************************/
 /* User Global Variable Declaration                                           */
@@ -73,9 +74,12 @@ void main(void)
          PORTBbits.RB3= Bandera_cambio_estado;
      }
      if (recibi_datos){
+         
          recibi_datos=false;
-          Bandera_cambio_estado=!Bandera_cambio_estado;
-          PORTBbits.RB3= Bandera_cambio_estado;
+         indice_de_dato=0;
+         Bandera_cambio_estado=!Bandera_cambio_estado;
+         if (calcula_mensaje_crc(cadenarecibida)==0){
+          PORTBbits.RB3= Bandera_cambio_estado;}
      }
 
     }
