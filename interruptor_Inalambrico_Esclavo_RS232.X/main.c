@@ -77,8 +77,9 @@ void main(void)
          
          recibi_datos=false;
          indice_de_dato=0;
-         Bandera_cambio_estado=!Bandera_cambio_estado;
+         
          if (calcula_mensaje_crc(cadenarecibida)==0){
+          Bandera_cambio_estado=!Bandera_cambio_estado;
           PORTBbits.RB3= Bandera_cambio_estado;}
      }
 

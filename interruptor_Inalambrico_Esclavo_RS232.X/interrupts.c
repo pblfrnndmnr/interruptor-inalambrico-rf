@@ -46,21 +46,37 @@ void interrupt isr(void)
   
     }
     else{ if (PIR1bits.RCIF){
-        //la secuencia que envia el maestro es  DireccionDispositivoEncendido\n\r
+        //la secuencia que envia el maestro es  DireccionDispositivoEncendidoCRC\n\r
         //por ejemplo si
-        // DireccionDispositivo 0xEA
-        // Encendido 0b10100000= 0xA0
-        // Apagado   0b01010000= 0x50
-        //\n=0x0A
-        //\r=0x0D
+        // DireccionDispositivo '1'
+        // Encendido 'Y'
+        // Apagado   'N'
+        // CRC 0xD5AA //para encendido
+        // CRC 0x95A4 //para apagado
+        //\n
+        //\r
         //por lo tanto la secuencia completa es 
-        //EAA00A0D para Encendido y
-        //EA500A0D para apagado
-        // con cualquiera de las dos secuencias correctas se debe validar el 
+        //"1YÕª\n\r"  para Encendido y
+        //"1Nòñ\n\r para apagado
+        // con cualquiera de las dos secuencias de 6 bytes  correctas se debe validar el
         //comando recibido
         datosrecibidos=getch();
-        
-        switch (indice_de_dato){
+        if (indice_de_dato<4){
+         cadenarecibida[indice_de_dato]=datosrecibidos;
+         indice_de_dato++;
+        } else {
+            recibi_datos=true;
+
+        }
+        if (datosrecibidos=='\n'){
+            indice_de_dato=0;
+
+         }
+        if (datosrecibidos=='\r'){
+            indice_de_dato=0;
+         }
+
+     /*   switch (indice_de_dato){
             case 0:
                 if (datosrecibidos==DireccionDispositivo){
                     cadenarecibida[indice_de_dato]=datosrecibidos;
@@ -97,7 +113,7 @@ void interrupt isr(void)
                 if (datosrecibidos=='\r'){
 
                     recibi_datos= true;
-                      indice_de_dato=3;
+                      indice_de_dato=4;
                 }
 
 
@@ -108,7 +124,7 @@ void interrupt isr(void)
                 break;
         
         
-        }
+        }*/
  
     }
     //TODO Agregar y configurar interrupcion por timer0 o 1 para eliminar rebote pulsador

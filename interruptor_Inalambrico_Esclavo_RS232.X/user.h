@@ -5,7 +5,7 @@
 #include <stdint.h>        /* For uint8_t definition */
 
 unsigned char datosrecibidos;
-char cadenarecibida[6];
+char cadenarecibida[]="\0\0\0\0\0";
 bool recibi_datos=false;
 #define DireccionDispositivo '1'
 #define Encendido 'Y'
