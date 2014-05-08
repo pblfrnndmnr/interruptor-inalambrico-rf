@@ -905,58 +905,157 @@
 <tr><td><code><i>   898</i> </code></td><td><code>&nbsp #&nbsp 20&nbsp "system.h"</code></td></tr>
 <tr><td><code><i>   899</i> </code></td><td><code>&nbsp void&nbsp ConfigureOscillator(void);</code></td></tr>
 <tr><td><code><i>   900</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   901</i> </code></td><td><code>&nbsp #&nbsp 14&nbsp "user.h"</code></td></tr>
-<tr><td><code><i>   902</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp datos=0b01010000;</code></td></tr>
-<tr><td><code><i>   903</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   904</i> </code></td><td><code>&nbsp #&nbsp 23</code></td></tr>
-<tr><td><code><i>   905</i> </code></td><td><code>&nbsp void&nbsp InitApp(void);</code></td></tr>
+<tr><td><code><i>   901</i> </code></td><td><code>&nbsp #&nbsp 7&nbsp "user.h"</code></td></tr>
+<tr><td><code><i>   902</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp datosrecibidos;</code></td></tr>
+<tr><td><code><i>   903</i> </code></td><td><code>&nbsp char&nbsp cadenarecibida[]="\0\0\0\0\0";</code></td></tr>
+<tr><td><code><i>   904</i> </code></td><td><code>&nbsp bool&nbsp recibi_datos=0;</code></td></tr>
+<tr><td><code><i>   905</i> </code></td><td><code>&nbsp </code></td></tr>
 <tr><td><code><i>   906</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   907</i> </code></td><td><code>&nbsp #&nbsp 40&nbsp "main.c"</code></td></tr>
-<tr><td><code><i>   908</i> </code></td><td><code>&nbsp bool&nbsp Bandera_boton_pulsado;</code></td></tr>
-<tr><td><code><i>   909</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   910</i> </code></td><td><code>&nbsp #&nbsp 49</code></td></tr>
-<tr><td><code><i>   911</i> </code></td><td><code>&nbsp void&nbsp main(void)</code></td></tr>
-<tr><td><code><i>   912</i> </code></td><td><code>&nbsp {</code></td></tr>
-<tr><td><code><i>   913</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   914</i> </code></td><td><code>&nbsp ConfigureOscillator();</code></td></tr>
-<tr><td><code><i>   915</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   916</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   917</i> </code></td><td><code>&nbsp InitApp();</code></td></tr>
-<tr><td><code><i>   918</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   919</i> </code></td><td><code>&nbsp _delay((unsigned&nbsp long)((10)*(20000000UL/4000.0)));</code></td></tr>
-<tr><td><code><i>   920</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   921</i> </code></td><td><code>&nbsp while(1)</code></td></tr>
-<tr><td><code><i>   922</i> </code></td><td><code>&nbsp {</code></td></tr>
-<tr><td><code><i>   923</i> </code></td><td><code>&nbsp if&nbsp (Bandera_boton_pulsado){</code></td></tr>
-<tr><td><code><i>   924</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   925</i> </code></td><td><code>&nbsp INTCONbits.INTE=0;</code></td></tr>
-<tr><td><code><i>   926</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   927</i> </code></td><td><code>&nbsp PORTBbits.RB1=1;</code></td></tr>
+<tr><td><code><i>   907</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   908</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp indice_de_dato=0;</code></td></tr>
+<tr><td><code><i>   909</i> </code></td><td><code>&nbsp bool&nbsp Bandera_estado_llave=0;</code></td></tr>
+<tr><td><code><i>   910</i> </code></td><td><code>&nbsp bool&nbsp Bandera_cambio_estado=0;</code></td></tr>
+<tr><td><code><i>   911</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   912</i> </code></td><td><code>&nbsp #&nbsp 26</code></td></tr>
+<tr><td><code><i>   913</i> </code></td><td><code>&nbsp void&nbsp InitApp(void);</code></td></tr>
+<tr><td><code><i>   914</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   915</i> </code></td><td><code>&nbsp #&nbsp 8&nbsp "/opt/microchip/xc8/v1.21/include/stdio.h"</code></td></tr>
+<tr><td><code><i>   916</i> </code></td><td><code>&nbsp typedef&nbsp int&nbsp ptrdiff_t;</code></td></tr>
+<tr><td><code><i>   917</i> </code></td><td><code>&nbsp typedef&nbsp unsigned&nbsp size_t;</code></td></tr>
+<tr><td><code><i>   918</i> </code></td><td><code>&nbsp typedef&nbsp unsigned&nbsp short&nbsp wchar_t;</code></td></tr>
+<tr><td><code><i>   919</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   920</i> </code></td><td><code>&nbsp #&nbsp 7&nbsp "/opt/microchip/xc8/v1.21/include/stdarg.h"</code></td></tr>
+<tr><td><code><i>   921</i> </code></td><td><code>&nbsp typedef&nbsp void&nbsp *&nbsp va_list[1];</code></td></tr>
+<tr><td><code><i>   922</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   923</i> </code></td><td><code>&nbsp #pragma&nbsp intrinsic(__va_start)</code></td></tr>
+<tr><td><code><i>   924</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp *&nbsp __va_start(void);</code></td></tr>
+<tr><td><code><i>   925</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   926</i> </code></td><td><code>&nbsp #pragma&nbsp intrinsic(__va_arg)</code></td></tr>
+<tr><td><code><i>   927</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp *&nbsp __va_arg(void&nbsp *,&nbsp ...);</code></td></tr>
 <tr><td><code><i>   928</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   929</i> </code></td><td><code>&nbsp _delay((unsigned&nbsp long)((1)*(20000000UL/4000.0)));</code></td></tr>
-<tr><td><code><i>   930</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   929</i> </code></td><td><code>&nbsp #&nbsp 23&nbsp "/opt/microchip/xc8/v1.21/include/stdio.h"</code></td></tr>
+<tr><td><code><i>   930</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp errno;</code></td></tr>
 <tr><td><code><i>   931</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   932</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   933</i> </code></td><td><code>&nbsp PORTB=(0x0F&PORTB)|datos;</code></td></tr>
-<tr><td><code><i>   934</i> </code></td><td><code>&nbsp PORTBbits.RB2=0;</code></td></tr>
-<tr><td><code><i>   935</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   936</i> </code></td><td><code>&nbsp #&nbsp 76</code></td></tr>
-<tr><td><code><i>   937</i> </code></td><td><code>&nbsp _delay((unsigned&nbsp long)((500)*(20000000UL/4000000.0)));</code></td></tr>
-<tr><td><code><i>   938</i> </code></td><td><code>&nbsp PORTBbits.RB2=1;</code></td></tr>
-<tr><td><code><i>   939</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   940</i> </code></td><td><code>&nbsp #&nbsp 80</code></td></tr>
-<tr><td><code><i>   941</i> </code></td><td><code>&nbsp _delay((unsigned&nbsp long)((15)*(20000000UL/4000.0)));</code></td></tr>
-<tr><td><code><i>   942</i> </code></td><td><code>&nbsp PORTBbits.RB1=0;</code></td></tr>
-<tr><td><code><i>   943</i> </code></td><td><code>&nbsp Bandera_boton_pulsado=0;</code></td></tr>
+<tr><td><code><i>   932</i> </code></td><td><code>&nbsp #&nbsp 54</code></td></tr>
+<tr><td><code><i>   933</i> </code></td><td><code>&nbsp struct&nbsp __prbuf</code></td></tr>
+<tr><td><code><i>   934</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>   935</i> </code></td><td><code>&nbsp char&nbsp *&nbsp ptr;</code></td></tr>
+<tr><td><code><i>   936</i> </code></td><td><code>&nbsp void&nbsp (*&nbsp func)(char);</code></td></tr>
+<tr><td><code><i>   937</i> </code></td><td><code>&nbsp };</code></td></tr>
+<tr><td><code><i>   938</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   939</i> </code></td><td><code>&nbsp #&nbsp 17&nbsp "/opt/microchip/xc8/v1.21/include/conio.h"</code></td></tr>
+<tr><td><code><i>   940</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp errno;</code></td></tr>
+<tr><td><code><i>   941</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   942</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   943</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp init_uart(void);</code></td></tr>
 <tr><td><code><i>   944</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   945</i> </code></td><td><code>&nbsp INTCONbits.INTF=0;</code></td></tr>
-<tr><td><code><i>   946</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   947</i> </code></td><td><code>&nbsp INTCONbits.INTE=1;</code></td></tr>
-<tr><td><code><i>   948</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   949</i> </code></td><td><code>&nbsp asm("sleep");</code></td></tr>
-<tr><td><code><i>   950</i> </code></td><td><code>&nbsp }</code></td></tr>
-<tr><td><code><i>   951</i> </code></td><td><code>&nbsp }</code></td></tr>
-<tr><td><code><i>   952</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   953</i> </code></td><td><code>&nbsp }</code></td></tr>
-<tr><td><code><i>   954</i> </code></td><td><code>&nbsp </code></code></BODY>
+<tr><td><code><i>   945</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp getch(void);</code></td></tr>
+<tr><td><code><i>   946</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp getche(void);</code></td></tr>
+<tr><td><code><i>   947</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp putch(char);</code></td></tr>
+<tr><td><code><i>   948</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp ungetch(char);</code></td></tr>
+<tr><td><code><i>   949</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   950</i> </code></td><td><code>&nbsp extern&nbsp __bit&nbsp kbhit(void);</code></td></tr>
+<tr><td><code><i>   951</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   952</i> </code></td><td><code>&nbsp #&nbsp 31</code></td></tr>
+<tr><td><code><i>   953</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp *&nbsp cgets(char&nbsp *);</code></td></tr>
+<tr><td><code><i>   954</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp cputs(const&nbsp char&nbsp *);</code></td></tr>
+<tr><td><code><i>   955</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   956</i> </code></td><td><code>&nbsp #&nbsp 99&nbsp "/opt/microchip/xc8/v1.21/include/stdio.h"</code></td></tr>
+<tr><td><code><i>   957</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp cprintf(char&nbsp *,&nbsp ...);</code></td></tr>
+<tr><td><code><i>   958</i> </code></td><td><code>&nbsp #pragma&nbsp printf_check(cprintf)</code></td></tr>
+<tr><td><code><i>   959</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   960</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   961</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   962</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp _doprnt(struct&nbsp __prbuf&nbsp *,&nbsp const&nbsp register&nbsp char&nbsp *,&nbsp register&nbsp va_list);</code></td></tr>
+<tr><td><code><i>   963</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   964</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   965</i> </code></td><td><code>&nbsp #&nbsp 191</code></td></tr>
+<tr><td><code><i>   966</i> </code></td><td><code>&nbsp #pragma&nbsp printf_check(vprintf)&nbsp const</code></td></tr>
+<tr><td><code><i>   967</i> </code></td><td><code>&nbsp #pragma&nbsp printf_check(vsprintf)&nbsp const</code></td></tr>
+<tr><td><code><i>   968</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   969</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp *&nbsp gets(char&nbsp *);</code></td></tr>
+<tr><td><code><i>   970</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp puts(const&nbsp char&nbsp *);</code></td></tr>
+<tr><td><code><i>   971</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp scanf(const&nbsp char&nbsp *,&nbsp ...);</code></td></tr>
+<tr><td><code><i>   972</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp sscanf(const&nbsp char&nbsp *,&nbsp const&nbsp char&nbsp *,&nbsp ...);</code></td></tr>
+<tr><td><code><i>   973</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp vprintf(const&nbsp char&nbsp *,&nbsp va_list);</code></td></tr>
+<tr><td><code><i>   974</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp vsprintf(char&nbsp *,&nbsp const&nbsp char&nbsp *,&nbsp va_list)&nbsp __attribute__((unsupported("vsprintf()&nbsp is&nbsp not&nbsp supported&nbsp by&nbsp this&nbsp compiler")));</code></td></tr>
+<tr><td><code><i>   975</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp vscanf(const&nbsp char&nbsp *,&nbsp va_list&nbsp ap);</code></td></tr>
+<tr><td><code><i>   976</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp vsscanf(const&nbsp char&nbsp *,&nbsp const&nbsp char&nbsp *,&nbsp va_list);</code></td></tr>
+<tr><td><code><i>   977</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   978</i> </code></td><td><code>&nbsp #pragma&nbsp printf_check(printf)&nbsp const</code></td></tr>
+<tr><td><code><i>   979</i> </code></td><td><code>&nbsp #pragma&nbsp printf_check(sprintf)&nbsp const</code></td></tr>
+<tr><td><code><i>   980</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp sprintf(char&nbsp *,&nbsp const&nbsp char&nbsp *,&nbsp ...);</code></td></tr>
+<tr><td><code><i>   981</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp printf(const&nbsp char&nbsp *,&nbsp ...);</code></td></tr>
+<tr><td><code><i>   982</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   983</i> </code></td><td><code>&nbsp #&nbsp 17&nbsp "/opt/microchip/xc8/v1.21/include/conio.h"</code></td></tr>
+<tr><td><code><i>   984</i> </code></td><td><code>&nbsp extern&nbsp int&nbsp errno;</code></td></tr>
+<tr><td><code><i>   985</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   986</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   987</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp init_uart(void);</code></td></tr>
+<tr><td><code><i>   988</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   989</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp getch(void);</code></td></tr>
+<tr><td><code><i>   990</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp getche(void);</code></td></tr>
+<tr><td><code><i>   991</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp putch(char);</code></td></tr>
+<tr><td><code><i>   992</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp ungetch(char);</code></td></tr>
+<tr><td><code><i>   993</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   994</i> </code></td><td><code>&nbsp extern&nbsp __bit&nbsp kbhit(void);</code></td></tr>
+<tr><td><code><i>   995</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   996</i> </code></td><td><code>&nbsp #&nbsp 31</code></td></tr>
+<tr><td><code><i>   997</i> </code></td><td><code>&nbsp extern&nbsp char&nbsp *&nbsp cgets(char&nbsp *);</code></td></tr>
+<tr><td><code><i>   998</i> </code></td><td><code>&nbsp extern&nbsp void&nbsp cputs(const&nbsp char&nbsp *);</code></td></tr>
+<tr><td><code><i>   999</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1000</i> </code></td><td><code>&nbsp #&nbsp 20&nbsp "system.h"</code></td></tr>
+<tr><td><code><i>  1001</i> </code></td><td><code>&nbsp void&nbsp ConfigureOscillator(void);</code></td></tr>
+<tr><td><code><i>  1002</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1003</i> </code></td><td><code>&nbsp #&nbsp 10&nbsp "usart1.h"</code></td></tr>
+<tr><td><code><i>  1004</i> </code></td><td><code>&nbsp void&nbsp configura_USART&nbsp (void);</code></td></tr>
+<tr><td><code><i>  1005</i> </code></td><td><code>&nbsp void&nbsp putch(char&nbsp data);</code></td></tr>
+<tr><td><code><i>  1006</i> </code></td><td><code>&nbsp char&nbsp getch(void)&nbsp ;</code></td></tr>
+<tr><td><code><i>  1007</i> </code></td><td><code>&nbsp __bit&nbsp kbhit(void);</code></td></tr>
+<tr><td><code><i>  1008</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1009</i> </code></td><td><code>&nbsp #&nbsp 149&nbsp "crc_esclavo.h"</code></td></tr>
+<tr><td><code><i>  1010</i> </code></td><td><code>&nbsp int&nbsp calcula_mensaje_crc(char*&nbsp packet_ptr);</code></td></tr>
+<tr><td><code><i>  1011</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1012</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1013</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1014</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1015</i> </code></td><td><code>&nbsp int&nbsp calcula_CRC16(char&nbsp datos[],long&nbsp polinomio,long&nbsp inival);</code></td></tr>
+<tr><td><code><i>  1016</i> </code></td><td><code>&nbsp long&nbsp CRC16(char&nbsp value,&nbsp long&nbsp poly,&nbsp long&nbsp init_value,&nbsp long&nbsp exit_value);</code></td></tr>
+<tr><td><code><i>  1017</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1018</i> </code></td><td><code>&nbsp #&nbsp 55&nbsp "main.c"</code></td></tr>
+<tr><td><code><i>  1019</i> </code></td><td><code>&nbsp void&nbsp main(void)</code></td></tr>
+<tr><td><code><i>  1020</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>  1021</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1022</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1023</i> </code></td><td><code>&nbsp ConfigureOscillator();</code></td></tr>
+<tr><td><code><i>  1024</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1025</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1026</i> </code></td><td><code>&nbsp InitApp();</code></td></tr>
+<tr><td><code><i>  1027</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1028</i> </code></td><td><code>&nbsp configura_USART&nbsp ();</code></td></tr>
+<tr><td><code><i>  1029</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1030</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1031</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1032</i> </code></td><td><code>&nbsp while(1)</code></td></tr>
+<tr><td><code><i>  1033</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>  1034</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1035</i> </code></td><td><code>&nbsp if&nbsp (Bandera_estado_llave){</code></td></tr>
+<tr><td><code><i>  1036</i> </code></td><td><code>&nbsp Bandera_cambio_estado=!Bandera_cambio_estado;</code></td></tr>
+<tr><td><code><i>  1037</i> </code></td><td><code>&nbsp Bandera_estado_llave=0;</code></td></tr>
+<tr><td><code><i>  1038</i> </code></td><td><code>&nbsp PORTBbits.RB3=&nbsp Bandera_cambio_estado;</code></td></tr>
+<tr><td><code><i>  1039</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>  1040</i> </code></td><td><code>&nbsp if&nbsp (recibi_datos){</code></td></tr>
+<tr><td><code><i>  1041</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1042</i> </code></td><td><code>&nbsp recibi_datos=0;</code></td></tr>
+<tr><td><code><i>  1043</i> </code></td><td><code>&nbsp indice_de_dato=0;</code></td></tr>
+<tr><td><code><i>  1044</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1045</i> </code></td><td><code>&nbsp if&nbsp (calcula_mensaje_crc(cadenarecibida)==0){</code></td></tr>
+<tr><td><code><i>  1046</i> </code></td><td><code>&nbsp Bandera_cambio_estado=!Bandera_cambio_estado;</code></td></tr>
+<tr><td><code><i>  1047</i> </code></td><td><code>&nbsp PORTBbits.RB3=&nbsp Bandera_cambio_estado;}</code></td></tr>
+<tr><td><code><i>  1048</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>  1049</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1050</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>  1051</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>  1052</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>  1053</i> </code></td><td><code>&nbsp </code></code></BODY>
 </HTML>

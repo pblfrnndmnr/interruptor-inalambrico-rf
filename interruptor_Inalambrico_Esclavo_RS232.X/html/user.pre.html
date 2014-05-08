@@ -902,49 +902,60 @@
 <tr><td><code><i>   895</i> </code></td><td><code>&nbsp #&nbsp 12&nbsp "/opt/microchip/xc8/v1.21/include/stdbool.h"</code></td></tr>
 <tr><td><code><i>   896</i> </code></td><td><code>&nbsp typedef&nbsp unsigned&nbsp char&nbsp bool;</code></td></tr>
 <tr><td><code><i>   897</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   898</i> </code></td><td><code>&nbsp #&nbsp 14&nbsp "user.h"</code></td></tr>
-<tr><td><code><i>   899</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp datos=0b01010000;</code></td></tr>
-<tr><td><code><i>   900</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   901</i> </code></td><td><code>&nbsp #&nbsp 23</code></td></tr>
-<tr><td><code><i>   902</i> </code></td><td><code>&nbsp void&nbsp InitApp(void);</code></td></tr>
+<tr><td><code><i>   898</i> </code></td><td><code>&nbsp #&nbsp 7&nbsp "user.h"</code></td></tr>
+<tr><td><code><i>   899</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp datosrecibidos;</code></td></tr>
+<tr><td><code><i>   900</i> </code></td><td><code>&nbsp char&nbsp cadenarecibida[]="\0\0\0\0\0";</code></td></tr>
+<tr><td><code><i>   901</i> </code></td><td><code>&nbsp bool&nbsp recibi_datos=0;</code></td></tr>
+<tr><td><code><i>   902</i> </code></td><td><code>&nbsp </code></td></tr>
 <tr><td><code><i>   903</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   904</i> </code></td><td><code>&nbsp #&nbsp 22&nbsp "user.c"</code></td></tr>
-<tr><td><code><i>   905</i> </code></td><td><code>&nbsp void&nbsp InitApp(void)</code></td></tr>
-<tr><td><code><i>   906</i> </code></td><td><code>&nbsp {</code></td></tr>
-<tr><td><code><i>   907</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   904</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   905</i> </code></td><td><code>&nbsp unsigned&nbsp char&nbsp indice_de_dato=0;</code></td></tr>
+<tr><td><code><i>   906</i> </code></td><td><code>&nbsp bool&nbsp Bandera_estado_llave=0;</code></td></tr>
+<tr><td><code><i>   907</i> </code></td><td><code>&nbsp bool&nbsp Bandera_cambio_estado=0;</code></td></tr>
 <tr><td><code><i>   908</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   909</i> </code></td><td><code>&nbsp PORTB=0b00000000;</code></td></tr>
-<tr><td><code><i>   910</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   911</i> </code></td><td><code>&nbsp PORTBbits.RB2=1;</code></td></tr>
-<tr><td><code><i>   912</i> </code></td><td><code>&nbsp PORTA=0b00000000;</code></td></tr>
-<tr><td><code><i>   913</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   914</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   909</i> </code></td><td><code>&nbsp #&nbsp 26</code></td></tr>
+<tr><td><code><i>   910</i> </code></td><td><code>&nbsp void&nbsp InitApp(void);</code></td></tr>
+<tr><td><code><i>   911</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   912</i> </code></td><td><code>&nbsp #&nbsp 22&nbsp "user.c"</code></td></tr>
+<tr><td><code><i>   913</i> </code></td><td><code>&nbsp void&nbsp InitApp(void)</code></td></tr>
+<tr><td><code><i>   914</i> </code></td><td><code>&nbsp {</code></td></tr>
 <tr><td><code><i>   915</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   916</i> </code></td><td><code>&nbsp TRISB=0b00000001;</code></td></tr>
-<tr><td><code><i>   917</i> </code></td><td><code>&nbsp CMCON=0x00000111;</code></td></tr>
+<tr><td><code><i>   916</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   917</i> </code></td><td><code>&nbsp PORTB=0b00000000;</code></td></tr>
 <tr><td><code><i>   918</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   919</i> </code></td><td><code>&nbsp TRISA=0b00000000;</code></td></tr>
+<tr><td><code><i>   919</i> </code></td><td><code>&nbsp PORTA=0b00000000;</code></td></tr>
 <tr><td><code><i>   920</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   921</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   922</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   923</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   924</i> </code></td><td><code>&nbsp OPTION_REGbits.PS=0b000;</code></td></tr>
-<tr><td><code><i>   925</i> </code></td><td><code>&nbsp OPTION_REGbits.PSA=0;</code></td></tr>
-<tr><td><code><i>   926</i> </code></td><td><code>&nbsp OPTION_REGbits.T0CS=0;</code></td></tr>
-<tr><td><code><i>   927</i> </code></td><td><code>&nbsp OPTION_REGbits.T0SE=0;</code></td></tr>
-<tr><td><code><i>   928</i> </code></td><td><code>&nbsp OPTION_REGbits.nRBPU=0;</code></td></tr>
+<tr><td><code><i>   921</i> </code></td><td><code>&nbsp #&nbsp 34</code></td></tr>
+<tr><td><code><i>   922</i> </code></td><td><code>&nbsp TRISB=0b00000011;</code></td></tr>
+<tr><td><code><i>   923</i> </code></td><td><code>&nbsp CMCON=0x00000111;</code></td></tr>
+<tr><td><code><i>   924</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   925</i> </code></td><td><code>&nbsp TRISA=0b00000000;</code></td></tr>
+<tr><td><code><i>   926</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   927</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   928</i> </code></td><td><code>&nbsp </code></td></tr>
 <tr><td><code><i>   929</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   930</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   931</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   932</i> </code></td><td><code>&nbsp if&nbsp (PORTBbits.RB0==1){</code></td></tr>
-<tr><td><code><i>   933</i> </code></td><td><code>&nbsp OPTION_REGbits.INTEDG=0;</code></td></tr>
-<tr><td><code><i>   934</i> </code></td><td><code>&nbsp }else{</code></td></tr>
+<tr><td><code><i>   930</i> </code></td><td><code>&nbsp OPTION_REGbits.PS=0b000;</code></td></tr>
+<tr><td><code><i>   931</i> </code></td><td><code>&nbsp OPTION_REGbits.PSA=0;</code></td></tr>
+<tr><td><code><i>   932</i> </code></td><td><code>&nbsp OPTION_REGbits.T0CS=0;</code></td></tr>
+<tr><td><code><i>   933</i> </code></td><td><code>&nbsp OPTION_REGbits.T0SE=0;</code></td></tr>
+<tr><td><code><i>   934</i> </code></td><td><code>&nbsp OPTION_REGbits.nRBPU=0;</code></td></tr>
 <tr><td><code><i>   935</i> </code></td><td><code>&nbsp OPTION_REGbits.INTEDG=1;</code></td></tr>
-<tr><td><code><i>   936</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>   936</i> </code></td><td><code>&nbsp </code></td></tr>
 <tr><td><code><i>   937</i> </code></td><td><code>&nbsp </code></td></tr>
-<tr><td><code><i>   938</i> </code></td><td><code>&nbsp #&nbsp 61</code></td></tr>
-<tr><td><code><i>   939</i> </code></td><td><code>&nbsp INTCONbits.INTE=1;</code></td></tr>
-<tr><td><code><i>   940</i> </code></td><td><code>&nbsp INTCONbits.GIE=1;</code></td></tr>
-<tr><td><code><i>   941</i> </code></td><td><code>&nbsp }</code></td></tr>
-<tr><td><code><i>   942</i> </code></td><td><code>&nbsp </code></code></BODY>
+<tr><td><code><i>   938</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   939</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   940</i> </code></td><td><code>&nbsp PIE1bits.RCIE=1;</code></td></tr>
+<tr><td><code><i>   941</i> </code></td><td><code>&nbsp INTCONbits.INTE=1;</code></td></tr>
+<tr><td><code><i>   942</i> </code></td><td><code>&nbsp INTCONbits.PEIE=1;</code></td></tr>
+<tr><td><code><i>   943</i> </code></td><td><code>&nbsp INTCONbits.GIE=1;</code></td></tr>
+<tr><td><code><i>   944</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   945</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   946</i> </code></td><td><code>&nbsp if&nbsp (PORTBbits.RB0==1){</code></td></tr>
+<tr><td><code><i>   947</i> </code></td><td><code>&nbsp OPTION_REGbits.INTEDG=0;</code></td></tr>
+<tr><td><code><i>   948</i> </code></td><td><code>&nbsp }else{</code></td></tr>
+<tr><td><code><i>   949</i> </code></td><td><code>&nbsp OPTION_REGbits.INTEDG=1;</code></td></tr>
+<tr><td><code><i>   950</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>   951</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   952</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>   953</i> </code></td><td><code>&nbsp </code></code></BODY>
 </HTML>

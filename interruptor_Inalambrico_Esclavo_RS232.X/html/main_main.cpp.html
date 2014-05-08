@@ -71,7 +71,7 @@
 <tr><td><code>_HTC_VER_MINOR_</code></td><td>none</td><td>21</td></tr>
 <tr><td><code>__XC</code></td><td>none</td><td>1</td></tr>
 <tr><td><code>__XC__</code></td><td>none</td><td>1</td></tr>
-<tr><td><code>__DATE__</code></td><td>none</td><td>"Apr 28 2014"</td></tr>
+<tr><td><code>__DATE__</code></td><td>none</td><td>"May  8 2014"</td></tr>
 <tr><td><code>_GPRBITS_</code></td><td>none</td><td>2</td></tr>
 <tr><td><code>_FLASH_WRITE_SIZE</code></td><td>none</td><td>1</td></tr>
 <tr><td><code>__PICC__</code></td><td>none</td><td>1</td></tr>
@@ -86,7 +86,7 @@
 <tr><td><code>_BANKCOUNT_</code></td><td>none</td><td>4</td></tr>
 <tr><td><code>__STACK_COMPILED</code></td><td>none</td><td>1</td></tr>
 <tr><td><code>__STDC__</code></td><td>none</td><td>1</td></tr>
-<tr><td><code>__TIME__</code></td><td>none</td><td>"02:55:25"</td></tr>
+<tr><td><code>__TIME__</code></td><td>none</td><td>"15:57:29"</td></tr>
 <tr><td><code>_16F628A</code></td><td>none</td><td>1</td></tr>
 <tr><td><code>_OMNI_CODE_</code></td><td>none</td><td>1</td></tr>
 <tr><td><code>__FLASHTYPE</code></td><td>none</td><td>3</td></tr>
@@ -1048,25 +1048,72 @@
 <tr><td><code>false</code></td><td>none</td><td>0</td></tr>
 <tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
 <tr><td><code>FCY</code></td><td>none</td><td>_XTAL_FREQ/4</td></tr>
-<tr><td><code>UsaTecla</code></td><td>none</td><td></td></tr>
-<tr><td><code>TE_HT12E</code></td><td>none</td><td>PORTBbits.RB2</td></tr>
-<tr><td><code>TransmisorON</code></td><td>none</td><td>PORTBbits.RB1</td></tr>
-<tr><td><code>Encendido</code></td><td>none</td><td>0b10100000</td></tr>
-<tr><td><code>Apagado</code></td><td>none</td><td>0b01010000</td></tr>
-<tr><td><code>Apagado</code></td><td>none</td><td>0b01010000</td></tr>
-<tr><td><code>__delay_ms</code></td><td>1</td><td>_delay((unsigned long)((<0>)*(_XTAL_FREQ/4000.0)))</td></tr>
-<tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
-<tr><td><code>TransmisorON</code></td><td>none</td><td>PORTBbits.RB1</td></tr>
-<tr><td><code>__delay_ms</code></td><td>1</td><td>_delay((unsigned long)((<0>)*(_XTAL_FREQ/4000.0)))</td></tr>
-<tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
-<tr><td><code>TE_HT12E</code></td><td>none</td><td>PORTBbits.RB2</td></tr>
-<tr><td><code>__delay_us</code></td><td>1</td><td>_delay((unsigned long)((<0>)*(_XTAL_FREQ/4000000.0)))</td></tr>
-<tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
-<tr><td><code>TE_HT12E</code></td><td>none</td><td>PORTBbits.RB2</td></tr>
-<tr><td><code>__delay_ms</code></td><td>1</td><td>_delay((unsigned long)((<0>)*(_XTAL_FREQ/4000.0)))</td></tr>
-<tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
-<tr><td><code>TransmisorON</code></td><td>none</td><td>PORTBbits.RB1</td></tr>
 <tr><td><code>false</code></td><td>none</td><td>0</td></tr>
-<tr><td><code>SLEEP</code></td><td>empty</td><td>asm("sleep")</td></table>
+<tr><td><code>DireccionDispositivo</code></td><td>none</td><td>'1'</td></tr>
+<tr><td><code>Encendido</code></td><td>none</td><td>'Y'</td></tr>
+<tr><td><code>Apagado</code></td><td>none</td><td>'N'</td></tr>
+<tr><td><code>false</code></td><td>none</td><td>0</td></tr>
+<tr><td><code>false</code></td><td>none</td><td>0</td></tr>
+<tr><td><code>_STDIO_H_</code></td><td>none</td><td></td></tr>
+<tr><td><code>BUFSIZ</code></td><td>none</td><td>1024</td></tr>
+<tr><td><code>_NFILE</code></td><td>none</td><td>20</td></tr>
+<tr><td><code>_STDDEF</code></td><td>none</td><td></td></tr>
+<tr><td><code>offsetof</code></td><td>2</td><td>((int)&(((<0> *)0)-><1>))</td></tr>
+<tr><td><code>va_start</code></td><td>2</td><td>*<0> = __va_start()</td></tr>
+<tr><td><code>va_arg</code></td><td>2</td><td>(*(<1> *)__va_arg((*(<1> **)<0>), (<1>)0))</td></tr>
+<tr><td><code>_STDARG</code></td><td>none</td><td></td></tr>
+<tr><td><code>va_end</code></td><td>1</td><td></td></tr>
+<tr><td><code>NULL</code></td><td>none</td><td>(0)</td></tr>
+<tr><td><code>_IOFBF</code></td><td>none</td><td>0</td></tr>
+<tr><td><code>_IOREAD</code></td><td>none</td><td>01</td></tr>
+<tr><td><code>_IOWRT</code></td><td>none</td><td>02</td></tr>
+<tr><td><code>_IORW</code></td><td>none</td><td>03</td></tr>
+<tr><td><code>_IONBF</code></td><td>none</td><td>04</td></tr>
+<tr><td><code>_IOMYBUF</code></td><td>none</td><td>010</td></tr>
+<tr><td><code>_IOEOF</code></td><td>none</td><td>020</td></tr>
+<tr><td><code>_IOERR</code></td><td>none</td><td>040</td></tr>
+<tr><td><code>_IOSTRG</code></td><td>none</td><td>0100</td></tr>
+<tr><td><code>_IOBINARY</code></td><td>none</td><td>0200</td></tr>
+<tr><td><code>_IOLBF</code></td><td>none</td><td>0400</td></tr>
+<tr><td><code>_IODIRN</code></td><td>none</td><td>01000</td></tr>
+<tr><td><code>_IOAPPEND</code></td><td>none</td><td>02000</td></tr>
+<tr><td><code>_IOSEEKED</code></td><td>none</td><td>04000</td></tr>
+<tr><td><code>_IOTMPFILE</code></td><td>none</td><td>010000</td></tr>
+<tr><td><code>EOF</code></td><td>none</td><td>(-1)</td></tr>
+<tr><td><code>_IOSTRING</code></td><td>none</td><td>(-67)</td></tr>
+<tr><td><code>SEEK_SET</code></td><td>none</td><td>0</td></tr>
+<tr><td><code>SEEK_CUR</code></td><td>none</td><td>1</td></tr>
+<tr><td><code>SEEK_END</code></td><td>none</td><td>2</td></tr>
+<tr><td><code>TMP_MAX</code></td><td>none</td><td>255</td></tr>
+<tr><td><code>getchar</code></td><td>empty</td><td>getche()</td></tr>
+<tr><td><code>putchar</code></td><td>1</td><td>putch(<0>)</td></tr>
+<tr><td><code>getc</code></td><td>1</td><td>fgetc(<0>)</td></tr>
+<tr><td><code>putc</code></td><td>2</td><td>fputc(<0>,<1>)</td></tr>
+<tr><td><code>feof</code></td><td>1</td><td>(((<0>)->_flag&_IOEOF)!=0)</td></tr>
+<tr><td><code>ferror</code></td><td>1</td><td>(((<0>)->_flag&_IOERR)!=0)</td></tr>
+<tr><td><code>fileno</code></td><td>1</td><td>((unsigned short)<0>->_file)</td></tr>
+<tr><td><code>clrerr</code></td><td>1</td><td><0>->_flag &= ~_IOERR</td></tr>
+<tr><td><code>clreof</code></td><td>1</td><td><0>->_flag &= ~_IOEOF</td></tr>
+<tr><td><code>clearerr</code></td><td>1</td><td><0>->_flag &= ~(_IOERR|_IOEOF)</td></tr>
+<tr><td><code>_XTAL_FREQ</code></td><td>none</td><td>20000000UL</td></tr>
+<tr><td><code>FCY</code></td><td>none</td><td>_XTAL_FREQ/4</td></tr>
+<tr><td><code>baudrate</code></td><td>none</td><td>2400</td></tr>
+<tr><td><code>CRC_16</code></td><td>none</td><td>0x8005</td></tr>
+<tr><td><code>INIVAL_CRC_16</code></td><td>none</td><td>0x0000</td></tr>
+<tr><td><code>INIVAL_CRC_16_SICK</code></td><td>none</td><td>0x0000</td></tr>
+<tr><td><code>INIVAL_CRC_KERMIT</code></td><td>none</td><td>0x0000</td></tr>
+<tr><td><code>INIVAL_CRC_DNP</code></td><td>none</td><td>0x0000</td></tr>
+<tr><td><code>INIVAL_CRC_CCITT</code></td><td>none</td><td>0xFFFF</td></tr>
+<tr><td><code>INIVAL_CRC_16_MODBUS</code></td><td>none</td><td>0xFFFF</td></tr>
+<tr><td><code>CRC_16_INV</code></td><td>none</td><td>0xA001</td></tr>
+<tr><td><code>CRC_CCITT</code></td><td>none</td><td>0x1021</td></tr>
+<tr><td><code>CRC_CCITT_INV</code></td><td>none</td><td>0x8408</td></tr>
+<tr><td><code>CRC_DNP</code></td><td>none</td><td>0x3D65</td></tr>
+<tr><td><code>CRC_DNP_INV</code></td><td>none</td><td>0xA6BC</td></tr>
+<tr><td><code>bit_test</code></td><td>2</td><td>((<0>) & ( 1<<(<1>)))>><1></td></tr>
+<tr><td><code>bit_set</code></td><td>2</td><td>((<0>)|= ((int) 1<<(<1>)))</td></tr>
+<tr><td><code>bit_clear</code></td><td>2</td><td>((<0>)&=~((int) 1<<(<1>)))</td></tr>
+<tr><td><code>false</code></td><td>none</td><td>0</td></tr>
+<tr><td><code>false</code></td><td>none</td><td>0</td></table>
 </BODY>
 </HTML>

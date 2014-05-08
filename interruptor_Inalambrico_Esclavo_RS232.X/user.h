@@ -7,6 +7,7 @@
 unsigned char datosrecibidos;
 char cadenarecibida[]="\0\0\0\0\0";
 bool recibi_datos=false;
+#define Sincronizacion '\n'
 #define DireccionDispositivo '1'
 #define Encendido 'Y'
 #define Apagado   'N'

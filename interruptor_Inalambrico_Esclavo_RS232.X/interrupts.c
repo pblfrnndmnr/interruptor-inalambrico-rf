@@ -68,7 +68,7 @@ void interrupt isr(void)
             recibi_datos=true;
 
         }
-        if (datosrecibidos=='\n'){
+        if (datosrecibidos==Sincronizacion){
             indice_de_dato=0;
 
          }
