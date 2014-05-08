@@ -64,22 +64,9 @@ void main(void)
     /* Initialize I/O and Peripherals for application */
     configura_USART();
     InitApp();
-   //TE_HT12E=1;
-    //configura_USART();
-   // __delay_ms(10);
-
- /*  int i;
-    for (i=1;i<=255;i++){
-      __delay_ms(1000);
-        printf("%u__",i);
-        putch(i);
-    }*/
- // printf("Codigo enviado: %x%x\n\r", DireccionDispositivo,Encendido);
-   
-  //printf("Codigo Enviado: %x%x\n\r", DireccionDispositivo,Apagado);
-     char enviaEncendido[5]={DireccionDispositivo,Encendido,0xD5, 0xAA};//debo poner el crc al reves sino no da 0 al volver a calcularlo
+    char enviaEncendido[5]={DireccionDispositivo,Encendido,0xD5, 0xAA};//debo poner el crc al reves sino no da 0 al volver a calcularlo
     char enviaApagado[5]={DireccionDispositivo,Apagado,0x95,0xA4};//debo poner el crc al reves sino no da 0 al volver a calcularlo
-  //calcula_mensaje_crc(enviaEncendido); //se transmite 1Y,0xD5,0xAA
+ // calcula_mensaje_crc(enviaEncendido); //se transmite 1Y,0xD5,0xAA
    //calcula_mensaje_crc(enviaApagado);//se trnasmite 1N,0x95,0xA4
     
 while(1)
@@ -91,21 +78,18 @@ while(1)
          //Habilito transmisor
          TransmisorON=1;
          PORTBbits.RB5=1;
-         //Espero a que se inicie correctamente el transmisor minimo 40us (no verificado)
-         __delay_ms(1);
+         //Espero a que se inicie correctamente el transmisor minimo 1.5ms (no verificado)
+         __delay_ms(2);
            //Habilito la transmision de datos
          //Envio los datos codificados direccion y estado
          if (datos==Encendido){
          printf("%s\n\r", enviaEncendido);
          }else if(datos==Apagado){
          printf("%s\n\r", enviaApagado);
-         }
-        
-         
-               
-        /*TODO Espero que se transmitan todos los datos a 2400b/seg, son 4 Bytes,
+         }       
+        /*TODO Espero que se transmitan todos los datos a 2400b/seg, son 6 Bytes,
         o sea 48 bits, tarda ~20ms*/
-        __delay_ms(30);
+        __delay_ms(20);
         TransmisorON=0;
         Bandera_boton_pulsado=false;
         //Borro el flag de interrupcion
