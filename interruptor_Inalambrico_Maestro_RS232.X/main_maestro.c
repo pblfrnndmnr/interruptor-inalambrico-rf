@@ -95,7 +95,7 @@ while(1)
         //Borro el flag de interrupcion
         INTCONbits.INTF=0;
 
-        //Habilito nievamente la interrupcion RB0
+        //Habilito nuevamente la interrupcion RB0
         INTCONbits.INTE=1;
         
         
