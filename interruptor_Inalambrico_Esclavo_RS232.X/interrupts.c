@@ -33,7 +33,7 @@ void interrupt isr(void)
     OPTION_REGbits.INTEDG=true; //Interrupcion por flanco de subida  de RB0
      }
 
-        
+    
 
         Bandera_estado_llave=true;
 
