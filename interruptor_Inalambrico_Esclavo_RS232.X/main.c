@@ -50,12 +50,17 @@
 /******************************************************************************/
 /* Main Program                                                               */
 /******************************************************************************/
-   
+   typedef unsigned short long loco;
+   #define SIM_FTP_AUDIO_1_FULL_SIZE  128 * 1024
+loco index = 1;
 
 void main(void)
 {
     /* Configure the oscillator for the device */
-
+while(index < SIM_FTP_AUDIO_1_FULL_SIZE){
+index=2;
+index = SIM_FTP_AUDIO_1_FULL_SIZE;
+PORTA=index;}
     ConfigureOscillator();
    
     /* Initialize I/O and Peripherals for application */
