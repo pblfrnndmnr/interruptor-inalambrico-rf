@@ -14,6 +14,7 @@ bool recibi_datos=false;
 unsigned char indice_de_dato=0;
 bool Bandera_estado_llave=false;
 bool Bandera_cambio_estado=false;
+bool pasaron_20ms=false;
 
 //unsigned char datos_recibidos=0xFF; //inicio la variable datos_recibidos con un valor arbitrario
 /*  Application specific user parameters used in user.c may go here */

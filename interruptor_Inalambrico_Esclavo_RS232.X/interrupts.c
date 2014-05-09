@@ -32,7 +32,10 @@ void interrupt isr(void)
       }else{
           OPTION_REGbits.INTEDG=true; //Interrupcion por flanco de subida  de RB0
       }
-      Bandera_estado_llave=true;
+     INTCONbits.T0IF=0;
+     INTCONbits.T0IE=1;
+     //Bandera_estado_llave=true;
+    //  pasaron_20ms=false;
       INTCONbits.INTF=0;
       /*Verifico si se proceso el comando, si es así deshabilito la interrupcion para
       dar tiempo a que se procese  y evitar el bouncing en el pulsador*/
@@ -68,8 +71,18 @@ void interrupt isr(void)
           }
       }else{
           if(INTCONbits.T0IF){
+             //debo entrar dos veces a la interrupcion para que pasen 20ms
+             if (pasaron_20ms)
+             {Bandera_estado_llave=true;
+             pasaron_20ms=false;
+             INTCONbits.T0IE=0;
+
+             }
+             else pasaron_20ms=true;
+              
+              TMR0=60;
               INTCONbits.T0IF=0;
-              asm("nop");
+            
           }
 
       }

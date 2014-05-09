@@ -39,8 +39,11 @@ void InitApp(void)
     /* Initialize peripherals */
 
 //Inicio el TIMER0
-    
-    OPTION_REGbits.PS=0b000; //000 -> 1/2 para el timer0
+    //elijo el prescaler para que interrumpa cada 13.05ms
+    #define PRESCALER 0b111 //-> 256
+//Ajusto la precarga del TIMER0 para que interrumpa cada 10ms
+    // debe ser TIMER0=59, esto asignado al entrar a la interrupcion
+    OPTION_REGbits.PS=PRESCALER; //000 -> 1/2 para el timer0
     OPTION_REGbits.PSA=0; ///Prescaler is assigned to the Timer0 module
     OPTION_REGbits.T0CS=0; //TMR0 Clock Source Select bit Internal
     OPTION_REGbits.T0SE=0; //TMR0 Source Edge Select bit (no usado ahora)
@@ -53,7 +56,7 @@ void InitApp(void)
     PIE1bits.RCIE=1; //Habilito interrupcion de recepcion de USART
     INTCONbits.INTE=1; //Habilito interrupcion RB0
     INTCONbits.PEIE=1;//Habilito la interupcion de los perifericos
-    INTCONbits.T0IE=1; //Habilito la interrupcion del TIMER0
+    //INTCONbits.T0IE=1; //Habilito la interrupcion del TIMER0
     INTCONbits.GIE=1; //Habilito interrupciones globales
 
  //Para ver en que flanco debo detectar la pulsacion de RB0, testeo la entrada antes de elegirlo
