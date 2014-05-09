@@ -56,7 +56,7 @@ void InitApp(void)
     #endif
     /* Enable interrupts */
 
-   // INTCONbits.INTF=0; //Limpio el flag de interrupcion de RB0
+    INTCONbits.INTF=0; //Limpio el flag de interrupcion de RB0
     INTCONbits.INTE=1; //Habilito interrupcion RB0
   //  PIE1bits.TXIE=1; //Habilito la interrupcion de transmision deUSART
     //INTCONbits.PEIE=1; //habilito interrupcion de perifericos

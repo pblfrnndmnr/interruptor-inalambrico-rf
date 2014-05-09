@@ -1,13 +1,13 @@
 __stringtab: STRING, 256 0 16
 __stringdata: STRING, 280 0 47
-_putch: CODE, 435 0 6
-_ConfigureOscillator: CODE, 441 0 1
+_putch: CODE, 436 0 6
+_ConfigureOscillator: CODE, 442 0 1
 _main: CODE, 163 0 86
-_configura_USART: CODE, 422 0 13
-_InitApp: CODE, 369 0 27
+_configura_USART: CODE, 423 0 13
+_InitApp: CODE, 369 0 28
 __initialization: CODE, 11 0 21
 ___lwdiv: CODE, 327 0 42
-_isr: CODE, 396 0 26
+_isr: CODE, 397 0 26
 _hexpowers: STRING, 272 0 8
 _printf: CODE, 34 0 129
-Total: 422
+Total: 423

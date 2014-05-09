@@ -83,7 +83,7 @@ while(1)
            //Habilito la transmision de datos
          //Envio los datos codificados direccion y estado
          if (datos==Encendido){
-         printf("\n%s\r", enviaEncendido);
+             printf("\n%s\r", enviaEncendido);
          }else if(datos==Apagado){
          printf("\n%s\r", enviaApagado);
          }       
