@@ -1,12 +1,12 @@
-_strlen: CODE, 351 0 17
-_calcula_mensaje_crc: CODE, 329 0 22
-_ConfigureOscillator: CODE, 378 0 3
+_strlen: CODE, 352 0 17
+_calcula_mensaje_crc: CODE, 330 0 22
+_ConfigureOscillator: CODE, 379 0 3
 _main: CODE, 259 0 39
-_configura_USART: CODE, 368 0 10
-_calcula_CRC16: CODE, 32 0 95
-_InitApp: CODE, 298 0 31
-__initialization: CODE, 13 0 17
-_isr: CODE, 208 0 51
-_getch: CODE, 381 0 2
-_CRC16: CODE, 127 0 81
-Total: 368
+_configura_USART: CODE, 369 0 10
+_calcula_CRC16: CODE, 26 0 95
+_InitApp: CODE, 298 0 32
+__initialization: CODE, 13 0 11
+_isr: CODE, 202 0 57
+_getch: CODE, 382 0 2
+_CRC16: CODE, 121 0 81
+Total: 369

@@ -25,59 +25,57 @@ void interrupt isr(void)
 {
     //Verifico que se entro a la interrupcion por RB0
 
-    if(INTCONbits.INTF==1){
-        // debo cambiar el flanco para saber en que estado está
-    if (OPTION_REGbits.INTEDG==true){
-    OPTION_REGbits.INTEDG=false;
-        }else{
-    OPTION_REGbits.INTEDG=true; //Interrupcion por flanco de subida  de RB0
-     }
+  if(INTCONbits.INTF==1){
+      // debo cambiar el flanco para saber en que estado está
+      if (OPTION_REGbits.INTEDG==true){
+          OPTION_REGbits.INTEDG=false;
+      }else{
+          OPTION_REGbits.INTEDG=true; //Interrupcion por flanco de subida  de RB0
+      }
+      Bandera_estado_llave=true;
+      INTCONbits.INTF=0;
+      /*Verifico si se proceso el comando, si es así deshabilito la interrupcion para
+      dar tiempo a que se procese  y evitar el bouncing en el pulsador*/
+      //if (!Bandera_dato_recibido)INTCONbits.INTE=0;
+  }else{
+      if (PIR1bits.RCIF){
+          //la secuencia que envia el maestro es  DireccionDispositivoEncendidoCRC\n\r
+          //por ejemplo si
+          // DireccionDispositivo '1'
+          // Encendido 'Y'
+          // Apagado   'N'
+          // CRC 0xD5AA //para encendido
+          // CRC 0x95A4 //para apagado
+          //Sincronizacion \n
+          //\r
+          //por lo tanto la secuencia completa es
+          //"\n1YÕª\r"  para Encendido y
+          //"\n1Nòñ\r para apagado
+          // con cualquiera de las dos secuencias de 6 bytes  correctas se debe validar el
+          //comando recibido
+          datosrecibidos=getch();
+          if (indice_de_dato<4){
+          cadenarecibida[indice_de_dato]=datosrecibidos;
+          indice_de_dato++;
+          } else {
+              recibi_datos=true;
+          }
+          if (datosrecibidos==Sincronizacion){
+              indice_de_dato=0;
+          }
+          if (datosrecibidos=='\r'){
+              indice_de_dato=0;
+          }
+      }else{
+          if(INTCONbits.T0IF){
+              INTCONbits.T0IF=0;
+              asm("nop");
+          }
 
-    
+      }
 
-        Bandera_estado_llave=true;
-
-       INTCONbits.INTF=0;
-
-   /*Verifico si se proceso el comando, si es así deshabilito la interrupcion para
-     dar tiempo a que se procese  y evitar el bouncing en el pulsador*/
-   //if (!Bandera_dato_recibido)INTCONbits.INTE=0;
-
-  
-    }
-    else{ if (PIR1bits.RCIF){
-        //la secuencia que envia el maestro es  DireccionDispositivoEncendidoCRC\n\r
-        //por ejemplo si
-        // DireccionDispositivo '1'
-        // Encendido 'Y'
-        // Apagado   'N'
-        // CRC 0xD5AA //para encendido
-        // CRC 0x95A4 //para apagado
-        //\n
-        //\r
-        //por lo tanto la secuencia completa es 
-        //"1YÕª\n\r"  para Encendido y
-        //"1Nòñ\n\r para apagado
-        // con cualquiera de las dos secuencias de 6 bytes  correctas se debe validar el
-        //comando recibido
-        datosrecibidos=getch();
-        if (indice_de_dato<4){
-         cadenarecibida[indice_de_dato]=datosrecibidos;
-         indice_de_dato++;
-        } else {
-            recibi_datos=true;
-
-        }
-        if (datosrecibidos==Sincronizacion){
-            indice_de_dato=0;
-
-         }
-        if (datosrecibidos=='\r'){
-            indice_de_dato=0;
-        }
-    }
     //TODO Agregar y configurar interrupcion por timer0 o 1 para eliminar rebote pulsador
-     }
+  }
     /* This code stub shows general interrupt handling.  Note that these
     conditional statements are not handled within 3 seperate if blocks.
     Do not use a seperate if block for each interrupt flag to avoid run
