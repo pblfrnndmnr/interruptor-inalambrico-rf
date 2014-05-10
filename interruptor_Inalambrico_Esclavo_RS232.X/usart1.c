@@ -12,8 +12,8 @@
 #include "system.h"
 
 void configura_USART (void){
- //TODO debo configurar RB2 para usar como IO, si se puede al usar USART (!!Leer datasheet!!)
-
+ /*En este pic si se habilita el USART los dos pines(RX y TX) quedan afectados a
+    este periférico y no pueden ser usados como I/O independientes*/
     //Calculo la carga del registro en base al baudrate elegido baudrate
 //FOSC=_XTAL_FREQ
 //X=SPBRG

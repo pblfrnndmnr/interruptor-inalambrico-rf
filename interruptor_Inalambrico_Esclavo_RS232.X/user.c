@@ -54,7 +54,7 @@ void InitApp(void)
 
    // INTCONbits.INTF=0; //Limpio el flag de interrupcion de RB0
     PIE1bits.RCIE=1; //Habilito interrupcion de recepcion de USART
-    INTCONbits.INTE=1; //Habilito interrupcion RB0
+   
     INTCONbits.PEIE=1;//Habilito la interupcion de los perifericos
     //INTCONbits.T0IE=1; //Habilito la interrupcion del TIMER0
     INTCONbits.GIE=1; //Habilito interrupciones globales
@@ -65,6 +65,7 @@ void InitApp(void)
     }else{
     OPTION_REGbits.INTEDG=1; //Interrupcion por flanco de subida  de RB0
     }
-
+INTCONbits.INTF=0;
+    INTCONbits.INTE=1; //Habilito interrupcion RB0
 }
 
