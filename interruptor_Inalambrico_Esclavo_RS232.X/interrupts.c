@@ -61,6 +61,7 @@ void interrupt isr(void)
           //"\n1Nòñ\r para apagado
           // con cualquiera de las dos secuencias de 6 bytes  correctas se debe validar el
           //comando recibido
+          volatile unsigned char datosrecibidos;
           datosrecibidos=getch();
           if (indice_de_dato<4){
           cadenarecibida[indice_de_dato]=datosrecibidos;

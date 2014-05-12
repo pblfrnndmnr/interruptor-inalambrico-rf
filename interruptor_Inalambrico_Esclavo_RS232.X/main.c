@@ -69,9 +69,8 @@ void main(void)
     {   
 
      if (Bandera_estado_llave){
-         Bandera_cambio_estado=!Bandera_cambio_estado;
          Bandera_estado_llave=false;
-         PORTBbits.RB3= Bandera_cambio_estado;
+         PORTBbits.RB3=~PORTBbits.RB3;
      }
      if (recibi_datos){
          
@@ -79,8 +78,8 @@ void main(void)
          indice_de_dato=0;
          
          if (calcula_mensaje_crc(cadenarecibida)==0){
-          Bandera_cambio_estado=!Bandera_cambio_estado;
-          PORTBbits.RB3= Bandera_cambio_estado;}
+             PORTBbits.RB3=~PORTBbits.RB3;
+         }
      }
 
     }
