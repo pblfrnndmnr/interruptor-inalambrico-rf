@@ -4,8 +4,8 @@
  Fecha: 27/04/2014
 
  Funcionamiento modo esclavo:
- El pic detecta los datos recibidos por el modulo RF a traves del HT12D
- Los datos recibidos son Encendido=1010 y Apagado=0101,
+ El pic detecta los datos recibidos por el modulo RF a del USART
+ 
  Como el interruptor está conectado con otra tecla normal alimentada con 220V,
  se debe detectar el estado de esta tecla con un pin del pic y hacer las veces
  de una llave combinada, es decir, al momento de encender el circuito
@@ -57,7 +57,7 @@ void main(void)
     /* Configure the oscillator for the device */
 
     ConfigureOscillator();
-   
+   __delay_ms(20);
     /* Initialize I/O and Peripherals for application */
     InitApp();
    //TE_HT12E=1;

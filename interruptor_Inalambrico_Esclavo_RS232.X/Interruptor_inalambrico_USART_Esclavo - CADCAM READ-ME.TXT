@@ -1,0 +1,32 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'Interruptor_inalambrico_USART_Esclavo.LYT'.
+CADCAM generated at 15:11:47 on jueves, 15 de mayo de 2014.
+
+File List
+---------
+Drill                   : Interruptor_inalambrico_USART_Esclavo - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	30th (0-15)
+T02	50th (0-15)
+T03	40th (0-15)
+T04	45th (0-15)
+T05	60th (0-15)
+T06	80th (0-15)
+
+
+[END OF FILE]

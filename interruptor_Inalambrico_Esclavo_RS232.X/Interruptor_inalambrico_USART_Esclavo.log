@@ -1,0 +1,12 @@
+# Writing all output to: Z:\home\fernando\MPLABXProjects\Interruptor_Inalambrico_RS232\interruptor_Inalambrico_Esclavo_RS232.X\Interruptor_inalambrico_USART_Esclavo.log
+set pad_wire_necking on
+bus diagonal
+fanout 5
+route 50
+clean 2
+route 50 16
+clean 2
+filter 5
+recorner diagonal
+status_file
+
