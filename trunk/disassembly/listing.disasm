@@ -1,0 +1,532 @@
+Disassembly Listing for interruptor_Inalambrico_Esclavo_RS232
+Generated From:
+/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/dist/16f628A/debug/interruptor_Inalambrico_Esclavo_RS232.X.debug.cof
+04/05/2014 22:17:17
+
+---  /home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c
+1:             /******************************************************************************/
+2:             /* Files to Include                                                           */
+3:             /******************************************************************************/
+4:             
+5:             #if defined(__XC)
+6:                 #include <xc.h>         /* XC8 General Include File */
+7:             #elif defined(HI_TECH_C)
+8:                 #include <htc.h>        /* HiTech General Include File */
+9:             #endif
+10:            
+11:            #include <stdint.h>         /* For uint8_t definition */
+12:            #include <stdbool.h>        /* For true/false definition */
+13:            
+14:            #include "user.h"
+15:            
+16:            /******************************************************************************/
+17:            /* User Functions                                                             */
+18:            /******************************************************************************/
+19:            
+20:            /* <Initialize variables in user.h and insert code for user algorithms.> */
+21:            
+22:            void InitApp(void)
+23:            {
+24:                /*  Initialize User Ports/Peripherals/Project here */
+25:                //Pongo todos los puertos en bajo antes de inicializarlos
+26:                PORTB=0b00000000;
+0081  1283     BCF STATUS, 0x5
+0082  0186     CLRF PORTB
+27:               
+28:                PORTA=0b00000000;
+0083  0185     CLRF PORTA
+29:                
+30:                /* Setup analog functionality and port direction */
+31:                /*Inicio el puerto b como salida salvo RB0 que sera la entrada que me dice
+32:                 del estado de la llave*/
+33:                //También RB1 que será la entrada de los datos recibidos por USART
+34:                TRISB=0b00000011;
+0084  3003     MOVLW 0x3
+0085  1683     BSF STATUS, 0x5
+0086  0086     MOVWF PORTB
+35:                CMCON=0x00000111; //desactivo los comparadores
+0087  3011     MOVLW 0x11
+0088  1283     BCF STATUS, 0x5
+0089  009F     MOVWF CMCON
+36:                //Inicio el puerto A como salida para evitar captar ruido
+37:                TRISA=0b00000000;
+008A  1683     BSF STATUS, 0x5
+008B  0185     CLRF PORTA
+38:            
+39:                /* Initialize peripherals */
+40:            
+41:            
+42:                OPTION_REGbits.PS=0b000; //000 -> 1/2 para el timer0
+008C  30F8     MOVLW 0xF8
+008D  0581     ANDWF TMR0, F
+43:                OPTION_REGbits.PSA=0; ///Prescaler is assigned to the Timer0 module
+008E  1181     BCF TMR0, 0x3
+44:                OPTION_REGbits.T0CS=0; //TMR0 Clock Source Select bit Internal
+008F  1281     BCF TMR0, 0x5
+45:                OPTION_REGbits.T0SE=0; //TMR0 Source Edge Select bit (no usado ahora)
+0090  1201     BCF TMR0, 0x4
+46:                OPTION_REGbits.nRBPU=0; //Habilito las resistencias pullup del puerto B
+0091  1381     BCF TMR0, 0x7
+47:                OPTION_REGbits.INTEDG=1; //Interrupcion por flanco de subida de RB0
+0092  1701     BSF TMR0, 0x6
+48:               
+49:                /* Enable interrupts */
+50:            
+51:               // INTCONbits.INTF=0; //Limpio el flag de interrupcion de RB0
+52:                PIE1bits.RCIE=1; //Habilito interrupcion de recepcion de USART
+0093  168C     BSF PIR1, 0x5
+53:                INTCONbits.INTE=1; //Habilito interrupcion RB0
+0094  160B     BSF INTCON, 0x4
+54:                INTCONbits.PEIE=1;//Habilito la interupcion de los perifericos
+0095  170B     BSF INTCON, 0x6
+55:                INTCONbits.GIE=1; //Habilito interrupciones globales
+0096  178B     BSF INTCON, 0x7
+56:            
+57:             //Para ver en que flanco debo detectar la pulsacion de RB0, testeo la entrada antes de elegirlo
+58:                if (PORTBbits.RB0==true){
+0097  1283     BCF STATUS, 0x5
+0098  1C06     BTFSS PORTB, 0x0
+0099  289D     GOTO 0x9D
+59:                OPTION_REGbits.INTEDG=0;
+009A  1683     BSF STATUS, 0x5
+009B  1301     BCF TMR0, 0x6
+60:                }else{
+009C  0008     RETURN
+61:                OPTION_REGbits.INTEDG=1; //Interrupcion por flanco de subida  de RB0
+009D  1683     BSF STATUS, 0x5
+009E  1701     BSF TMR0, 0x6
+62:                }
+63:            
+64:            }
+009F  0008     RETURN
+65:            
+---  /home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c
+1:             
+2:             
+3:             #if defined(__XC)
+4:                 #include <xc.h>         /* XC8 General Include File */
+5:             #elif defined(HI_TECH_C)
+6:                 #include <htc.h>        /* HiTech General Include File */
+7:             #endif
+8:             
+9:             #include <stdint.h>        /* For uint8_t definition */
+10:            #include <stdbool.h>
+11:            #include "usart1.h"
+12:            #include "system.h"
+13:            
+14:            void configura_USART (void){
+15:             //TODO debo configurar RB2 para usar como IO, si se puede al usar USART (!!Leer datasheet!!)
+16:            
+17:                //Calculo la carga del registro en base al baudrate elegido baudrate
+18:            //FOSC=_XTAL_FREQ
+19:            //X=SPBRG
+20:            //BAUDRATE=FOSC/(64(X+1)) //en low speed
+21:            //BAUDRATE=FOSC/(16(X+1)) //en high speed
+22:            //X=FOSC/64/BAUDRATE-1 en low speed
+23:            //X=FOSC/16/BAUDRATE-1 en low speed
+24:             //Si FOSC=20MHZ
+25:            //X=20000000/64/2400-1
+26:            
+27:            //X=129 para low speed
+28:            SPBRG= _XTAL_FREQ/64/baudrate-1;
+00A0  3081     MOVLW 0x81
+00A1  0099     MOVWF TXREG
+29:            //SPBRG=129;
+30:                /*TXSTAbits.CSRC=1; /*Asynchronous mode
+31:            Don?t care
+32:            Synchronous mode
+33:            1 = Master mode (Clock generated internally from BRG)
+34:            0 = Slave mode (Clock from external source)*/
+35:            
+36:            /*TXSTAbits.TX9=0;/*9-bit Transmit Enable bit
+37:                    1 = Selects 9-bit transmission
+38:                    0 = Selects 8-bit transmission*/
+39:            RCSTAbits.RX9=0; /*9-bit Transmit Enable bit*/
+00A2  1283     BCF STATUS, 0x5
+00A3  1318     BCF RCSTA, 0x6
+40:            TXSTAbits.SYNC=0;/* USART Mode Select bit
+00A4  1683     BSF STATUS, 0x5
+00A5  1218     BCF RCSTA, 0x4
+41:            1 = Synchronous mode
+42:            0 = Asynchronous mode*/
+43:            
+44:            
+45:            /*TXSTAbits.BRGH=0; /*High Baud Rate Select bit
+46:            Asynchronous mode
+47:            1 = High speed
+48:            0 = Low speed
+49:            Synchronous mode
+50:            Unused in this mode*/
+51:            //TXSTAbits.TX9D=1;// 9th bit of transmit data. Can be parity bit.
+52:            //Note: SREN/CREN overrides TXEN in SYNC mode.
+53:             
+54:            
+55:            /*TXSTAbits.TXEN=1; /*Transmit Enable bit(1)
+56:            1 = Transmit enabled
+57:            0 = Transmit disabled*/
+58:            RCSTAbits.CREN=1;
+00A6  1283     BCF STATUS, 0x5
+00A7  1618     BSF RCSTA, 0x4
+59:            RCSTAbits.SPEN=1;
+00A8  1798     BSF RCSTA, 0x7
+60:            }
+00A9  0008     RETURN
+61:            
+62:            
+63:            //prototipo de la funcion PUTCH para poder enviar al USART con printf
+64:            void putch(char data) {
+65:             while( ! TXIF)
+66:             continue;
+67:             TXREG = data;
+68:            }
+69:             char getch(void) {
+70:                return RCREG;
+00AD  081A     MOVF RCREG, W
+71:            }
+00AE  0008     RETURN
+72:            
+73:             __bit kbhit (void){ //el ide no reconoce __bit pero funciona
+74:                 return RCIF;
+75:             }
+---  /home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/system.c
+1:             /******************************************************************************/
+2:             /*Files to Include                                                            */
+3:             /******************************************************************************/
+4:             
+5:             #if defined(__XC)
+6:                 #include <xc.h>         /* XC8 General Include File */
+7:             #elif defined(HI_TECH_C)
+8:                 #include <htc.h>        /* HiTech General Include File */
+9:             #endif
+10:            
+11:            #include <stdint.h>        /* For uint8_t definition */
+12:            #include <stdbool.h>       /* For true/false definition */
+13:            
+14:            #include "system.h"
+15:            
+16:            /* Refer to the device datasheet for information about available
+17:            oscillator configurations. */
+18:            void ConfigureOscillator(void)
+19:            {
+20:                PCONbits.OSCF=0; //Configuro el oscilador a 32,768KHZ
+00AA  1683     BSF STATUS, 0x5
+00AB  118E     BCF TMR1L, 0x3
+21:                /*  Add clock switching code if appropriate.  */
+22:            
+23:                /* Typical actions in this function are to tweak the oscillator tuning
+24:                register, select new clock sources, and to wait until new clock sources
+25:                are stable before resuming execution of the main project. */
+26:            }
+00AC  0008     RETURN
+---  /home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c
+1:             /******************************************************************************/
+2:             /* Interruptor inalámbrico
+3:              Autor:Ing. Pablo Fernando Manieri
+4:              Fecha: 27/04/2014
+5:             
+6:              Funcionamiento modo esclavo:
+7:              El pic detecta los datos recibidos por el modulo RF a traves del HT12D
+8:              Los datos recibidos son Encendido=1010 y Apagado=0101,
+9:              Como el interruptor está conectado con otra tecla normal alimentada con 220V,
+10:             se debe detectar el estado de esta tecla con un pin del pic y hacer las veces
+11:             de una llave combinada, es decir, al momento de encender el circuito
+12:             la lampara comienza apagada, se detecta si la lleve esta en on o en off y se
+13:             guarda el estado, luego si se recibe un dato por RF o cambia el estado de la
+14:             llave se enciende la lampara, hasta un nuevo cambio de estados.*/
+15:            /******************************************************************************/
+16:            
+17:            
+18:            /******************************************************************************/
+19:            /* Files to Include                                                           */
+20:            /******************************************************************************/
+21:            #ifndef __PICCPRO__
+22:            #define __PICCPRO__
+23:            #endif
+24:            
+25:            #if defined(__XC)
+26:                #include <xc.h>         /* XC8 General Include File */
+27:            #elif defined(HI_TECH_C)
+28:                #include <htc.h>        /* HiTech General Include File */
+29:            #endif
+30:            
+31:            #include <stdint.h>        /* For uint8_t definition */
+32:            #include <stdbool.h>       /* For true/false definition */
+33:            
+34:            #include "system.h"        /* System funct/params, like osc/peripheral config */
+35:            #include "user.h"          /* User funct/params, such as InitApp */
+36:            #include <stdio.h>
+37:            #include <conio.h>
+38:            #include "usart1.h"
+39:            /******************************************************************************/
+40:            /* User Global Variable Declaration                                           */
+41:            /******************************************************************************/
+42:            //#define TransmisorON PORTBbits.RB1
+43:            //#define TE_HT12E PORTBbits.RB2
+44:            //bool Bandera_boton_pulsado;
+45:            
+46:            /* i.e. uint8_t <variable_name>; */
+47:            
+48:            /******************************************************************************/
+49:            /* Main Program                                                               */
+50:            /******************************************************************************/
+51:               
+52:            
+53:            void main(void)
+54:            {
+55:                /* Configure the oscillator for the device */
+56:            
+57:                ConfigureOscillator();
+0014  20AA     CALL 0xAA
+58:               
+59:                /* Initialize I/O and Peripherals for application */
+60:                InitApp();
+0015  2081     CALL 0x81
+61:               //TE_HT12E=1;
+62:                configura_USART ();
+0016  20A0     CALL 0xA0
+63:                __delay_ms(10);
+0017  3041     MOVLW 0x41
+0018  00F5     MOVWF 0x75
+0019  30EE     MOVLW 0xEE
+001A  00F4     MOVWF 0x74
+001B  0BF4     DECFSZ 0x74, F
+001C  281B     GOTO 0x1B
+001D  0BF5     DECFSZ 0x75, F
+001E  281B     GOTO 0x1B
+001F  0000     NOP
+64:                
+65:                
+66:                while(1)
+67:                {   
+68:            
+69:                 if (Bandera_estado_llave){
+0020  0877     MOVF Bandera_estado_llave, W
+0021  1903     BTFSC STATUS, 0x2
+0022  2835     GOTO 0x35
+70:                     Bandera_cambio_estado=!Bandera_cambio_estado;
+0023  3000     MOVLW 0x0
+0024  08F6     MOVF Bandera_cambio_estado, F
+0025  1903     BTFSC STATUS, 0x2
+0026  3001     MOVLW 0x1
+0027  00F6     MOVWF Bandera_cambio_estado
+71:                     Bandera_estado_llave=false;
+0028  01F7     CLRF Bandera_estado_llave
+72:                     PORTBbits.RB3= Bandera_cambio_estado;
+0029  0876     MOVF Bandera_cambio_estado, W
+002A  1283     BCF STATUS, 0x5
+002B  1303     BCF STATUS, 0x6
+002C  1D03     BTFSS STATUS, 0x2
+002D  1586     BSF PORTB, 0x3
+002E  1903     BTFSC STATUS, 0x2
+002F  1186     BCF PORTB, 0x3
+73:                     PORTBbits.RB2= Bandera_cambio_estado;
+0030  0876     MOVF Bandera_cambio_estado, W
+0031  1D03     BTFSS STATUS, 0x2
+0032  1506     BSF PORTB, 0x2
+0033  1903     BTFSC STATUS, 0x2
+0034  1106     BCF PORTB, 0x2
+74:                 }
+75:                 if (recibi_datos){
+0035  087A     MOVF recibi_datos, W
+0036  1903     BTFSC STATUS, 0x2
+0037  2820     GOTO 0x20
+76:                     recibi_datos=false;
+0039  01FA     CLRF recibi_datos
+77:                      Bandera_cambio_estado=!Bandera_cambio_estado;
+0038  3000     MOVLW 0x0
+003A  08F6     MOVF Bandera_cambio_estado, F
+003B  1903     BTFSC STATUS, 0x2
+003C  3001     MOVLW 0x1
+003D  00F6     MOVWF Bandera_cambio_estado
+78:                      PORTBbits.RB3= Bandera_cambio_estado;
+003E  0876     MOVF Bandera_cambio_estado, W
+003F  1283     BCF STATUS, 0x5
+0040  1303     BCF STATUS, 0x6
+0041  1D03     BTFSS STATUS, 0x2
+0042  1586     BSF PORTB, 0x3
+0043  1903     BTFSC STATUS, 0x2
+0044  1186     BCF PORTB, 0x3
+79:                 PORTBbits.RB2= Bandera_cambio_estado;
+0045  0876     MOVF Bandera_cambio_estado, W
+0046  1D03     BTFSS STATUS, 0x2
+0047  1506     BSF PORTB, 0x2
+0048  1903     BTFSC STATUS, 0x2
+0049  1106     BCF PORTB, 0x2
+004A  2820     GOTO 0x20
+80:                 }
+81:            
+82:                }
+83:            
+84:            }
+004B  1C8B     BTFSS INTCON, 0x1
+85:            
+---  /home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c
+1:             /******************************************************************************/
+2:             /*Files to Include                                                            */
+3:             /******************************************************************************/
+4:             
+5:             #if defined(__XC)
+6:                 #include <xc.h>         /* XC8 General Include File */
+7:             #elif defined(HI_TECH_C)
+8:                 #include <htc.h>        /* HiTech General Include File */
+9:             #endif
+10:            
+11:            #include <stdint.h>         /* For uint8_t definition */
+12:            #include <stdbool.h>        /* For true/false definition */
+13:            #include "usart1.h"
+14:            #include "user.h"
+15:            /******************************************************************************/
+16:            /* Interrupt Routines                                                         */
+17:            /******************************************************************************/
+18:            
+19:            /* Baseline devices don't have interrupts. Note that some PIC16's 
+20:             * are baseline devices.  Unfortunately the baseline detection macro is 
+21:             * _PIC12 */
+22:            #ifndef _PIC12
+23:            
+24:            void interrupt isr(void)
+25:            {
+0004  00FE     MOVWF 0x7E
+0005  0E03     SWAPF STATUS, W
+0006  00F0     MOVWF 0x70
+0007  0804     MOVF FSR, W
+0008  00F1     MOVWF 0x71
+0009  080A     MOVF PCLATH, W
+000A  00F2     MOVWF 0x72
+000B  284B     GOTO 0x4B
+000C  280D     GOTO 0xD
+26:                //Verifico que se entro a la interrupcion por RB0
+27:            
+28:                if(INTCONbits.INTF==1){
+004B  1C8B     BTFSS INTCON, 0x1
+29:                    // debo cambiar el flanco para saber en que estado está
+30:                if (OPTION_REGbits.INTEDG==true){
+004D  1683     BSF STATUS, 0x5
+004E  1303     BCF STATUS, 0x6
+004F  1F01     BTFSS TMR0, 0x6
+0050  2853     GOTO 0x53
+31:                OPTION_REGbits.INTEDG=false;
+0051  1301     BCF TMR0, 0x6
+32:                    }else{
+0052  2854     GOTO 0x54
+33:                OPTION_REGbits.INTEDG=true; //Interrupcion por flanco de subida  de RB0
+0053  1701     BSF TMR0, 0x6
+34:                 }
+35:            
+36:                    
+37:            
+38:                    Bandera_estado_llave=true;
+0054  01F7     CLRF Bandera_estado_llave
+0055  0AF7     INCF Bandera_estado_llave, F
+39:            
+40:                   INTCONbits.INTF=0;
+0056  108B     BCF INTCON, 0x1
+41:            
+42:               /*Verifico si se proceso el comando, si es así deshabilito la interrupcion para
+43:                 dar tiempo a que se procese  y evitar el bouncing en el pulsador*/
+44:               //if (!Bandera_dato_recibido)INTCONbits.INTE=0;
+45:            
+46:              
+47:                }
+0057  2878     GOTO 0x78
+48:                else{ if (PIR1bits.RCIF){
+0058  1283     BCF STATUS, 0x5
+0059  1303     BCF STATUS, 0x6
+005A  1E8C     BTFSS PIR1, 0x5
+005B  2878     GOTO 0x78
+49:                    //la secuencia que envia el maestro es  DireccionDispositivoEncendido\n\r
+50:                    //por ejemplo si
+51:                    // DireccionDispositivo 0xEA
+52:                    // Encendido 0b10100000= 0xA0
+53:                    // Apagado   0b01010000= 0x50
+54:                    //\n=0x0A
+55:                    //\r=0x0D
+56:                    //por lo tanto la secuencia completa es 
+57:                    //EAA00A0D para Encendido y
+58:                    //EA500A0D para apagado
+59:                    // con cualquiera de las dos secuencias correctas se debe validar el 
+60:                    //comando recibido
+61:                    datosrecibidos=getch();
+005C  20AD     CALL 0xAD
+005D  00F8     MOVWF datosrecibidos
+62:            
+63:                    switch (indice_de_dato){
+005E  286A     GOTO 0x6A
+006A  0879     MOVF indice_de_dato, W
+006B  3A00     XORLW 0x0
+006C  1903     BTFSC STATUS, 0x2
+006D  285F     GOTO 0x5F
+006E  3A01     XORLW 0x1
+006F  1903     BTFSC STATUS, 0x2
+0070  2865     GOTO 0x65
+0071  2868     GOTO 0x68
+64:                        case 0:
+65:                            if (datosrecibidos==((DireccionDispositivo&&0xF0)<<4)){
+005F  0878     MOVF datosrecibidos, W
+0060  3A10     XORLW 0x10
+0061  1D03     BTFSS STATUS, 0x2
+0062  2872     GOTO 0x72
+66:                                indice_de_dato++;
+0063  0AF9     INCF indice_de_dato, F
+0064  2872     GOTO 0x72
+67:                            }
+68:                            break;
+69:                        case 1:
+70:                            if (datosrecibidos==DireccionDispositivo&&0x0F){
+0065  0878     MOVF datosrecibidos, W
+0066  3AEA     XORLW 0xEA
+0067  2861     GOTO 0x61
+71:                                indice_de_dato++;
+72:                            }
+73:                            break;
+74:            
+75:                            
+76:                            
+77:                        default:
+78:                            recibi_datos= false;
+0068  01FA     CLRF recibi_datos
+79:                            break;
+0069  2872     GOTO 0x72
+80:                    
+81:                    
+82:                    }
+83:                    if (datosrecibidos==0x0a){
+0072  0878     MOVF datosrecibidos, W
+0073  3A0A     XORLW 0xA
+0074  1D03     BTFSS STATUS, 0x2
+0075  2878     GOTO 0x78
+84:                        recibi_datos= true;}
+0076  01FA     CLRF recibi_datos
+0077  0AFA     INCF recibi_datos, F
+85:                    // kbhit();
+86:                }
+87:                
+88:                }
+89:                /* This code stub shows general interrupt handling.  Note that these
+90:                conditional statements are not handled within 3 seperate if blocks.
+91:                Do not use a seperate if block for each interrupt flag to avoid run
+92:                time errors. */
+93:            
+94:            #if 0
+95:                
+96:                /*  Add interrupt routine code here. */
+97:            
+98:                /* Determine which flag generated the interrupt */
+99:                if(<Interrupt Flag 1>)
+100:               {
+101:                   <Interrupt Flag 1=0>; /* Clear Interrupt Flag 1 */
+102:               }
+103:               else if (<Interrupt Flag 2>)
+104:               {
+105:                   <Interrupt Flag 2=0>; /* Clear Interrupt Flag 2 */
+106:               }
+107:               else
+108:               {
+109:                   /* Unhandled interrupts */
+110:               }
+111:           #endif
+112:           }
+0078  0872     MOVF 0x72, W
+113:           #endif
+114:           
+115:           
