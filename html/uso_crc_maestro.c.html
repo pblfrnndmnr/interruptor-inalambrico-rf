@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<TITLE>Listing of uso_crc_maestro.c</TITLE>
+<LINK rel=stylesheet href="udf_styles.css" type="text/css">
+</HEAD>
+<BODY>
+<table class="">
+<tr><td><code><i>     1</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>     2</i> </code></td><td><code>&nbsp /////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>     3</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp EX_CRC.C&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>     4</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>     5</i> </code></td><td><code>&nbsp ////&nbsp&nbsp This&nbsp example&nbsp program&nbsp shows&nbsp how&nbsp to&nbsp send&nbsp messages&nbsp between&nbsp two&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>     6</i> </code></td><td><code>&nbsp ////&nbsp&nbsp PICs&nbsp using&nbsp CRC&nbsp error&nbsp checking.&nbsp&nbsp Pushing&nbsp a&nbsp button&nbsp on&nbsp the&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>     7</i> </code></td><td><code>&nbsp ////&nbsp&nbsp prototype&nbsp card&nbsp sends&nbsp a&nbsp message&nbsp from&nbsp that&nbsp PIC&nbsp to&nbsp any&nbsp other&nbsp PICs&nbsp ////</code></td></tr>
+<tr><td><code><i>     8</i> </code></td><td><code>&nbsp ////&nbsp&nbsp that&nbsp are&nbsp connected.&nbsp&nbsp The&nbsp receiving&nbsp PIC&nbsp then&nbsp sends&nbsp back&nbsp an&nbsp ACK&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>     9</i> </code></td><td><code>&nbsp ////&nbsp&nbsp after&nbsp it&nbsp correctly&nbsp receives&nbsp the&nbsp message.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    10</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    11</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Two&nbsp seperate&nbsp PICs&nbsp are&nbsp needed&nbsp for&nbsp this&nbsp example.&nbsp&nbsp Compile&nbsp the&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    12</i> </code></td><td><code>&nbsp ////&nbsp&nbsp code&nbsp as&nbsp is&nbsp and&nbsp program&nbsp the&nbsp first&nbsp PIC.&nbsp&nbsp Then&nbsp switch&nbsp the&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    13</i> </code></td><td><code>&nbsp ////&nbsp&nbsp MACHINE_ADDRESS&nbsp and&nbsp SEND_ADDRESS&nbsp and&nbsp program&nbsp the&nbsp second&nbsp PIC.&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    14</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    15</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    16</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Packet&nbsp Protocol:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    17</i> </code></td><td><code>&nbsp ////&nbsp&nbsp +------------+--------------+---------+--------+------+-----+&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    18</i> </code></td><td><code>&nbsp ////&nbsp&nbsp |&nbsp Address&nbsp TO&nbsp |&nbsp Address&nbsp FROM&nbsp |&nbsp Control&nbsp |&nbsp Length&nbsp |&nbsp Data&nbsp |&nbsp CRC&nbsp |&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    19</i> </code></td><td><code>&nbsp ////&nbsp&nbsp +------------+--------------+---------+--------+------+-----+&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    20</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    21</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Address&nbsp TO:&nbsp&nbsp&nbsp&nbsp 1&nbsp byte&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Address&nbsp of&nbsp sending&nbsp PIC&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    22</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Address&nbsp FROM:&nbsp&nbsp 1&nbsp byte&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Address&nbsp of&nbsp receiving&nbsp PIC&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    23</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Control:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1&nbsp byte&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Used&nbsp for&nbsp ACK&nbsp and&nbsp NACK&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    24</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Length:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2&nbsp bytes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Number&nbsp of&nbsp bytes&nbsp in&nbsp Data&nbsp field&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    25</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Data:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 0&nbsp to&nbsp N&nbsp bytes&nbsp&nbsp&nbsp Data&nbsp being&nbsp sent&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    26</i> </code></td><td><code>&nbsp ////&nbsp&nbsp CRC:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2&nbsp bytes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 16&nbsp Bit&nbsp CRC&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    27</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    28</i> </code></td><td><code>&nbsp ////&nbsp&nbsp Configure&nbsp the&nbsp CCS&nbsp prototype&nbsp card&nbsp as&nbsp follows:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    29</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp Jumper&nbsp from&nbsp PIC&nbsp 1&nbsp pin&nbsp B0&nbsp to&nbsp PIC&nbsp 2&nbsp pin&nbsp B1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    30</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp Jumper&nbsp from&nbsp PIC&nbsp 1&nbsp pin&nbsp B1&nbsp to&nbsp PIC&nbsp 2&nbsp pin&nbsp B0&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    31</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp Jumper&nbsp from&nbsp PIC&nbsp 1&nbsp GND&nbsp to&nbsp PIC&nbsp 2&nbsp GND&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    32</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp Jumper&nbsp from&nbsp PIC&nbsp 1&nbsp Switch&nbsp to&nbsp PIC&nbsp 1&nbsp pin&nbsp B2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    33</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp Jumper&nbsp from&nbsp PIC&nbsp 2&nbsp Switch&nbsp to&nbsp PIC&nbsp 2&nbsp pin&nbsp B2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    34</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp See&nbsp additional&nbsp connections&nbsp below.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    35</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    36</i> </code></td><td><code>&nbsp ////&nbsp&nbsp This&nbsp example&nbsp will&nbsp work&nbsp with&nbsp the&nbsp PCM&nbsp and&nbsp PCH&nbsp compilers.&nbsp&nbsp The&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    37</i> </code></td><td><code>&nbsp ////&nbsp&nbsp following&nbsp conditional&nbsp compilation&nbsp lines&nbsp are&nbsp used&nbsp to&nbsp include&nbsp a&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    38</i> </code></td><td><code>&nbsp ////&nbsp&nbsp valid&nbsp device&nbsp for&nbsp each&nbsp compiler.&nbsp&nbsp Change&nbsp the&nbsp device,&nbsp clock&nbsp and&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    39</i> </code></td><td><code>&nbsp ////&nbsp&nbsp RS232&nbsp pins&nbsp for&nbsp your&nbsp hardware&nbsp if&nbsp needed.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    40</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    41</i> </code></td><td><code>&nbsp /////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    42</i> </code></td><td><code>&nbsp ////&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (C)&nbsp Copyright&nbsp 1996,2003&nbsp Custom&nbsp Computer&nbsp Services&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    43</i> </code></td><td><code>&nbsp ////&nbsp This&nbsp source&nbsp code&nbsp may&nbsp only&nbsp be&nbsp used&nbsp by&nbsp licensed&nbsp users&nbsp of&nbsp the&nbsp CCS&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    44</i> </code></td><td><code>&nbsp ////&nbsp C&nbsp compiler.&nbsp&nbsp This&nbsp source&nbsp code&nbsp may&nbsp only&nbsp be&nbsp distributed&nbsp to&nbsp other&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    45</i> </code></td><td><code>&nbsp ////&nbsp licensed&nbsp users&nbsp of&nbsp the&nbsp CCS&nbsp C&nbsp compiler.&nbsp&nbsp No&nbsp other&nbsp use,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    46</i> </code></td><td><code>&nbsp ////&nbsp reproduction&nbsp or&nbsp distribution&nbsp is&nbsp permitted&nbsp without&nbsp written&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    47</i> </code></td><td><code>&nbsp ////&nbsp permission.&nbsp&nbsp Derivative&nbsp programs&nbsp created&nbsp using&nbsp this&nbsp software&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    48</i> </code></td><td><code>&nbsp ////&nbsp in&nbsp object&nbsp code&nbsp form&nbsp are&nbsp not&nbsp restricted&nbsp in&nbsp any&nbsp way.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ////</code></td></tr>
+<tr><td><code><i>    49</i> </code></td><td><code>&nbsp /////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    50</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    51</i> </code></td><td><code>&nbsp #if&nbsp defined(__XC)</code></td></tr>
+<tr><td><code><i>    52</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  xc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp XC8&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>    53</i> </code></td><td><code>&nbsp #elif&nbsp defined(HI_TECH_C)</code></td></tr>
+<tr><td><code><i>    54</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  htc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp HiTech&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>    55</i> </code></td><td><code>&nbsp #endif</code></td></tr>
+<tr><td><code><i>    56</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    57</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdint.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp uint8_t&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    58</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdbool.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp true/false&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    59</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdio.h&rsaquo  </code></td></tr>
+<tr><td><code><i>    60</i> </code></td><td><code>&nbsp #include&nbsp "system.h"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp System&nbsp funct/params,&nbsp like&nbsp osc/peripheral&nbsp config&nbsp */</code></td></tr>
+<tr><td><code><i>    61</i> </code></td><td><code>&nbsp #include&nbsp "user.h"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp User&nbsp funct/params,&nbsp such&nbsp as&nbsp InitApp&nbsp */</code></td></tr>
+<tr><td><code><i>    62</i> </code></td><td><code>&nbsp #include&nbsp "usart1.h"</code></td></tr>
+<tr><td><code><i>    63</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  string.h&rsaquo  </code></td></tr>
+<tr><td><code><i>    64</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    65</i> </code></td><td><code>&nbsp #include&nbsp "crc_esclavo.h"</code></td></tr>
+<tr><td><code><i>    66</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    67</i> </code></td><td><code>&nbsp //&nbsp SEND_PACKET</code></td></tr>
+<tr><td><code><i>    68</i> </code></td><td><code>&nbsp //&nbsp Funcion&nbsp que&nbsp envia&nbsp el&nbsp paquete&nbsp al&nbsp otro&nbsp pic,&nbsp codificado&nbsp con&nbsp CRC</code></td></tr>
+<tr><td><code><i>    69</i> </code></td><td><code>&nbsp int&nbsp calcula_mensaje_crc(char*&nbsp packet_ptr)</code></td></tr>
+<tr><td><code><i>    70</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>    71</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //char&nbsp *ptr;</code></td></tr>
+<tr><td><code><i>    72</i> </code></td><td><code>&nbsp &nbsp&nbsp unsigned&nbsp int&nbsp&nbsp CRC;</code></td></tr>
+<tr><td><code><i>    73</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //ptr&nbsp =&nbsp packet_ptr;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //&nbsp set&nbsp pointer</code></td></tr>
+<tr><td><code><i>    74</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //CRC&nbsp =&nbsp generate_16bit_crc(ptr,&nbsp packet_length,&nbsp CRC_CCITT);</code></td></tr>
+<tr><td><code><i>    75</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp CRC=calcula_CRC16(packet_ptr,CRC_16_INV,INIVAL_CRC_16);</code></td></tr>
+<tr><td><code><i>    76</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //&nbsp make&nbsp CRC</code></td></tr>
+<tr><td><code><i>    77</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp return&nbsp CRC;</code></td></tr>
+<tr><td><code><i>    78</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    79</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //printf("%s&nbsp el&nbsp crc&nbsp es:%X\n\r",packet_ptr,CRC);</code></td></tr>
+<tr><td><code><i>    80</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //putch((int)(CRC&rsaquo &rsaquo  8));&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //&nbsp send&nbsp CRC</code></td></tr>
+<tr><td><code><i>    81</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //putch((int)(CRC));</code></td></tr>
+<tr><td><code><i>    82</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>    83</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    84</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    85</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    86</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    87</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    88</i> </code></td><td><code>&nbsp //CALC_CRC16</code></td></tr>
+<tr><td><code><i>    89</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    90</i> </code></td><td><code>&nbsp //Calcula&nbsp CRC&nbsp de&nbsp polinomios&nbsp de&nbsp 17&nbsp bits&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp By&nbsp BrunoF(Bruno&nbsp Fascendini)&nbsp para&nbsp el&nbsp foro&nbsp todopic:http://www.todopic.com.ar/foros</code></td></tr>
+<tr><td><code><i>    91</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    92</i> </code></td><td><code>&nbsp //Recibe:</code></td></tr>
+<tr><td><code><i>    93</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>    94</i> </code></td><td><code>&nbsp //value:&nbsp int16&nbsp del&nbsp valor&nbsp del&nbsp cual&nbsp calcular&nbsp el&nbsp CRC</code></td></tr>
+<tr><td><code><i>    95</i> </code></td><td><code>&nbsp //poly:&nbsp int16&nbsp del&nbsp valor&nbsp del&nbsp polinomio&nbsp ASOCIADO*&nbsp con&nbsp el&nbsp cual&nbsp se&nbsp calcula&nbsp el&nbsp CRC</code></td></tr>
+<tr><td><code><i>    96</i> </code></td><td><code>&nbsp //Tener&nbsp en&nbsp cuenta&nbsp que&nbsp el&nbsp algoritmo&nbsp usa&nbsp el&nbsp polinomio&nbsp invertido</code></td></tr>
+<tr><td><code><i>    97</i> </code></td><td><code>&nbsp //enter_value:&nbsp int16&nbsp del&nbsp valor&nbsp de&nbsp entrada&nbsp con&nbsp el&nbsp cual&nbsp realizar&nbsp XOR</code></td></tr>
+<tr><td><code><i>    98</i> </code></td><td><code>&nbsp //exit_value:&nbsp int16&nbsp del&nbsp valor&nbsp de&nbsp salida&nbsp con&nbsp el&nbsp cual&nbsp realizar&nbsp XOR</code></td></tr>
+<tr><td><code><i>    99</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>   100</i> </code></td><td><code>&nbsp //Devuelve:</code></td></tr>
+<tr><td><code><i>   101</i> </code></td><td><code>&nbsp //value:&nbsp int16&nbsp con&nbsp el&nbsp CRC&nbsp calculado</code></td></tr>
+<tr><td><code><i>   102</i> </code></td><td><code>&nbsp ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</code></td></tr>
+<tr><td><code><i>   103</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   104</i> </code></td><td><code>&nbsp long&nbsp CRC16(char&nbsp value,&nbsp long&nbsp poly,&nbsp long&nbsp init_value,&nbsp long&nbsp exit_value){</code></td></tr>
+<tr><td><code><i>   105</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp long&nbsp res;</code></td></tr>
+<tr><td><code><i>   106</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp long&nbsp i;</code></td></tr>
+<tr><td><code><i>   107</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   108</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp res=value;</code></td></tr>
+<tr><td><code><i>   109</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   110</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp res^=init_value;</code></td></tr>
+<tr><td><code><i>   111</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   112</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp for(i=0;i&lsaquo  8;i++){</code></td></tr>
+<tr><td><code><i>   113</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if(res&nbsp &&nbsp 1){</code></td></tr>
+<tr><td><code><i>   114</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp res&rsaquo &rsaquo  =&nbsp 1;</code></td></tr>
+<tr><td><code><i>   115</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp res^=poly;</code></td></tr>
+<tr><td><code><i>   116</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }else{</code></td></tr>
+<tr><td><code><i>   117</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp res&rsaquo &rsaquo  =&nbsp 1;</code></td></tr>
+<tr><td><code><i>   118</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>   119</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>   120</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp res^=exit_value;</code></td></tr>
+<tr><td><code><i>   121</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp return&nbsp res;</code></td></tr>
+<tr><td><code><i>   122</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>   123</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   124</i> </code></td><td><code>&nbsp int&nbsp calcula_CRC16(char&nbsp datos[],long&nbsp polinomio,long&nbsp inival)</code></td></tr>
+<tr><td><code><i>   125</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>   126</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>   127</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp int&nbsp i;</code></td></tr>
+<tr><td><code><i>   128</i> </code></td><td><code>&nbsp &nbsp </code></td></tr>
+<tr><td><code><i>   129</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp for(i=0;i&lsaquo  strlen(datos);i++){</code></td></tr>
+<tr><td><code><i>   130</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp inival=CRC16(datos[i],polinomio,inival,0x0000);</code></td></tr>
+<tr><td><code><i>   131</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>   132</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp switch&nbsp (polinomio){</code></td></tr>
+<tr><td><code><i>   133</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp case&nbsp CRC_DNP_INV:</code></td></tr>
+<tr><td><code><i>   134</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp inival^=0xFFFF;&nbsp //complemento&nbsp a&nbsp 1&nbsp del&nbsp CRC</code></td></tr>
+<tr><td><code><i>   135</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp unsigned&nbsp int&nbsp aux;</code></td></tr>
+<tr><td><code><i>   136</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp aux=(unsigned&nbsp int)inival;</code></td></tr>
+<tr><td><code><i>   137</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp inival=(long)((aux&lsaquo &lsaquo  8)+(aux&rsaquo &rsaquo  8));&nbsp //invierto&nbsp los&nbsp bytes</code></td></tr>
+<tr><td><code><i>   138</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   139</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp break;</code></td></tr>
+<tr><td><code><i>   140</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp default:</code></td></tr>
+<tr><td><code><i>   141</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp break;</code></td></tr>
+<tr><td><code><i>   142</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   143</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>   144</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>   145</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp return&nbsp inival;</code></td></tr>
+<tr><td><code><i>   146</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   147</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>   148</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //&nbsp return&nbsp a.exec();</code></td></tr>
+<tr><td><code><i>   149</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>   150</i> </code></td><td><code>&nbsp </code></code></BODY>
+</HTML>

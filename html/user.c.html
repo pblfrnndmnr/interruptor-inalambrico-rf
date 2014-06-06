@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<TITLE>Listing of user.c</TITLE>
+<LINK rel=stylesheet href="udf_styles.css" type="text/css">
+</HEAD>
+<BODY>
+<table class="">
+<tr><td><code><i>     1</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>     2</i> </code></td><td><code>&nbsp /*&nbsp Files&nbsp to&nbsp Include&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>     3</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>     4</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>     5</i> </code></td><td><code>&nbsp #if&nbsp defined(__XC)</code></td></tr>
+<tr><td><code><i>     6</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  xc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp XC8&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>     7</i> </code></td><td><code>&nbsp #elif&nbsp defined(HI_TECH_C)</code></td></tr>
+<tr><td><code><i>     8</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp #include&nbsp&lsaquo  htc.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp HiTech&nbsp General&nbsp Include&nbsp File&nbsp */</code></td></tr>
+<tr><td><code><i>     9</i> </code></td><td><code>&nbsp #endif</code></td></tr>
+<tr><td><code><i>    10</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    11</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdint.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp uint8_t&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    12</i> </code></td><td><code>&nbsp #include&nbsp&lsaquo  stdbool.h&rsaquo &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /*&nbsp For&nbsp true/false&nbsp definition&nbsp */</code></td></tr>
+<tr><td><code><i>    13</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    14</i> </code></td><td><code>&nbsp #include&nbsp "user.h"</code></td></tr>
+<tr><td><code><i>    15</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    16</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    17</i> </code></td><td><code>&nbsp /*&nbsp User&nbsp Functions&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp */</code></td></tr>
+<tr><td><code><i>    18</i> </code></td><td><code>&nbsp /******************************************************************************/</code></td></tr>
+<tr><td><code><i>    19</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    20</i> </code></td><td><code>&nbsp /*&nbsp&lsaquo  Initialize&nbsp variables&nbsp in&nbsp user.h&nbsp and&nbsp insert&nbsp code&nbsp for&nbsp user&nbsp algorithms.&rsaquo &nbsp */</code></td></tr>
+<tr><td><code><i>    21</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    22</i> </code></td><td><code>&nbsp void&nbsp InitApp(void)</code></td></tr>
+<tr><td><code><i>    23</i> </code></td><td><code>&nbsp {</code></td></tr>
+<tr><td><code><i>    24</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp&nbsp Initialize&nbsp User&nbsp Ports/Peripherals/Project&nbsp here&nbsp */</code></td></tr>
+<tr><td><code><i>    25</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp //Pongo&nbsp todos&nbsp los&nbsp puertos&nbsp en&nbsp bajo&nbsp antes&nbsp de&nbsp inicializarlos</code></td></tr>
+<tr><td><code><i>    26</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp PORTB=0b00000000;</code></td></tr>
+<tr><td><code><i>    27</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    28</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp PORTA=0b00000000;</code></td></tr>
+<tr><td><code><i>    29</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    30</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp Setup&nbsp analog&nbsp functionality&nbsp and&nbsp port&nbsp direction&nbsp */</code></td></tr>
+<tr><td><code><i>    31</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*Inicio&nbsp el&nbsp puerto&nbsp b&nbsp como&nbsp salida&nbsp salvo&nbsp RB0&nbsp que&nbsp sera&nbsp la&nbsp entrada&nbsp que&nbsp me&nbsp dice</code></td></tr>
+<tr><td><code><i>    32</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp del&nbsp estado&nbsp de&nbsp la&nbsp llave*/</code></td></tr>
+<tr><td><code><i>    33</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp //También&nbsp RB1&nbsp que&nbsp será&nbsp la&nbsp entrada&nbsp de&nbsp los&nbsp datos&nbsp recibidos&nbsp por&nbsp USART</code></td></tr>
+<tr><td><code><i>    34</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp TRISB=0b00000011;</code></td></tr>
+<tr><td><code><i>    35</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp CMCON=0x00000111;&nbsp //desactivo&nbsp los&nbsp comparadores</code></td></tr>
+<tr><td><code><i>    36</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp //Inicio&nbsp el&nbsp puerto&nbsp A&nbsp como&nbsp salida&nbsp para&nbsp evitar&nbsp captar&nbsp ruido</code></td></tr>
+<tr><td><code><i>    37</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp TRISA=0b00000000;</code></td></tr>
+<tr><td><code><i>    38</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    39</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp Initialize&nbsp peripherals&nbsp */</code></td></tr>
+<tr><td><code><i>    40</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    41</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    42</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.PS=0b000;&nbsp //000&nbsp -&rsaquo &nbsp 1/2&nbsp para&nbsp el&nbsp timer0</code></td></tr>
+<tr><td><code><i>    43</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.PSA=0;&nbsp ///Prescaler&nbsp is&nbsp assigned&nbsp to&nbsp the&nbsp Timer0&nbsp module</code></td></tr>
+<tr><td><code><i>    44</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.T0CS=0;&nbsp //TMR0&nbsp Clock&nbsp Source&nbsp Select&nbsp bit&nbsp Internal</code></td></tr>
+<tr><td><code><i>    45</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.T0SE=0;&nbsp //TMR0&nbsp Source&nbsp Edge&nbsp Select&nbsp bit&nbsp (no&nbsp usado&nbsp ahora)</code></td></tr>
+<tr><td><code><i>    46</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.nRBPU=0;&nbsp //Habilito&nbsp las&nbsp resistencias&nbsp pullup&nbsp del&nbsp puerto&nbsp B</code></td></tr>
+<tr><td><code><i>    47</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.INTEDG=1;&nbsp //Interrupcion&nbsp por&nbsp flanco&nbsp de&nbsp subida&nbsp de&nbsp RB0</code></td></tr>
+<tr><td><code><i>    48</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp </code></td></tr>
+<tr><td><code><i>    49</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp /*&nbsp Enable&nbsp interrupts&nbsp */</code></td></tr>
+<tr><td><code><i>    50</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    51</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp //&nbsp INTCONbits.INTF=0;&nbsp //Limpio&nbsp el&nbsp flag&nbsp de&nbsp interrupcion&nbsp de&nbsp RB0</code></td></tr>
+<tr><td><code><i>    52</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp PIE1bits.RCIE=1;&nbsp //Habilito&nbsp interrupcion&nbsp de&nbsp recepcion&nbsp de&nbsp USART</code></td></tr>
+<tr><td><code><i>    53</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp INTCONbits.INTE=1;&nbsp //Habilito&nbsp interrupcion&nbsp RB0</code></td></tr>
+<tr><td><code><i>    54</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp INTCONbits.PEIE=1;//Habilito&nbsp la&nbsp interupcion&nbsp de&nbsp los&nbsp perifericos</code></td></tr>
+<tr><td><code><i>    55</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp INTCONbits.GIE=1;&nbsp //Habilito&nbsp interrupciones&nbsp globales</code></td></tr>
+<tr><td><code><i>    56</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    57</i> </code></td><td><code>&nbsp &nbsp //Para&nbsp ver&nbsp en&nbsp que&nbsp flanco&nbsp debo&nbsp detectar&nbsp la&nbsp pulsacion&nbsp de&nbsp RB0,&nbsp testeo&nbsp la&nbsp entrada&nbsp antes&nbsp de&nbsp elegirlo</code></td></tr>
+<tr><td><code><i>    58</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp if&nbsp (PORTBbits.RB0==true){</code></td></tr>
+<tr><td><code><i>    59</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.INTEDG=0;</code></td></tr>
+<tr><td><code><i>    60</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp }else{</code></td></tr>
+<tr><td><code><i>    61</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp OPTION_REGbits.INTEDG=1;&nbsp //Interrupcion&nbsp por&nbsp flanco&nbsp de&nbsp subida&nbsp&nbsp de&nbsp RB0</code></td></tr>
+<tr><td><code><i>    62</i> </code></td><td><code>&nbsp &nbsp&nbsp&nbsp&nbsp }</code></td></tr>
+<tr><td><code><i>    63</i> </code></td><td><code>&nbsp </code></td></tr>
+<tr><td><code><i>    64</i> </code></td><td><code>&nbsp }</code></td></tr>
+<tr><td><code><i>    65</i> </code></td><td><code>&nbsp </code></code></BODY>
+</HTML>

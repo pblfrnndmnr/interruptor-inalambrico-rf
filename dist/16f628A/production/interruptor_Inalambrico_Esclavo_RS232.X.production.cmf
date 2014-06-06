@@ -1,0 +1,411 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgt8Q6s9F.obj
+end_init CODE 0 C C 1 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+cinit CODE 0 D D C 2
+intentry CODE 0 4 4 8 2
+text9 CODE 0 1AE 1AE 2 2
+text8 CODE 0 78 78 5F 2
+text7 CODE 0 1AB 1AB 3 2
+text6 CODE 0 159 159 21 2
+text5 CODE 0 1A1 1A1 A 2
+text4 CODE 0 D7 D7 51 2
+text3 CODE 0 190 190 11 2
+text2 CODE 0 19 19 5F 2
+text1 CODE 0 17A 17A 16 2
+maintext CODE 0 128 128 31 2
+cstackBANK0 BANK0 1 20 20 2C 1
+cstackCOMMON COMMON 1 70 70 6 1
+bssBANK0 BANK0 1 4C 4C 8 1
+bssCOMMON COMMON 1 76 76 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0054-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-014F 1
+CODE 0001-0003 2
+CODE 01B0-07FF 2
+COMMON 0078-007D 1
+CONST 0001-0003 2
+CONST 01B0-07FF 2
+EEDATA 2100-217F 2
+ENTRY 0001-0003 2
+ENTRY 01B0-07FF 2
+IDLOC 2000-2003 2
+RAM 0054-006F 1
+RAM 00A0-00EF 1
+RAM 0120-014F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STRCODE 0001-0003 2
+STRCODE 01B0-07FF 2
+STRING 0001-0003 2
+STRING 01B0-07FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":25 4 intentry CODE
+"/tmp/cgtuPw0uk":663 D cinit CODE
+"/tmp/cgtuPw0uk":664 E cinit CODE
+"/tmp/cgtuPw0uk":667 F cinit CODE
+"/tmp/cgtuPw0uk":668 10 cinit CODE
+"/tmp/cgtuPw0uk":669 11 cinit CODE
+"/tmp/cgtuPw0uk":670 12 cinit CODE
+"/tmp/cgtuPw0uk":671 13 cinit CODE
+"/tmp/cgtuPw0uk":672 14 cinit CODE
+"/tmp/cgtuPw0uk":673 15 cinit CODE
+"/tmp/cgtuPw0uk":674 16 cinit CODE
+"/tmp/cgtuPw0uk":681 17 cinit CODE
+"/tmp/cgtuPw0uk":682 18 cinit CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":129 19 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":130 24 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":129 25 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":130 27 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":129 48 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":134 4C text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":136 4F text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":137 53 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":139 5F text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":132 60 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":145 73 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":149 77 text2 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":28 78 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":39 7B text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":40 7F text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":41 80 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":44 81 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":48 82 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":49 83 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":65 87 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":66 89 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":67 8D text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":68 93 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":69 94 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":70 95 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":72 97 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":73 9A text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":75 9B text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":76 9F text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":79 A1 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":81 A3 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":82 A6 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":83 B4 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":84 C1 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":85 C4 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":86 C5 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":88 C6 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":89 C7 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":91 C8 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":93 C9 text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":96 CB text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":97 CD text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/interrupts.c":132 CE text8 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":108 D7 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":110 DC text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":112 E4 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":113 E8 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":114 EA text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":115 EF text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":116 F7 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":117 F8 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":112 FD text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":120 117 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":121 11F text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":122 127 text4 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":59 128 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":60 129 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":62 133 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":64 134 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":71 135 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":72 138 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":73 139 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":75 143 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":80 146 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":77 147 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":78 148 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":80 149 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":81 14E maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":26 159 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/main.c":87 159 maintext CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":28 15C text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":34 15D text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":35 160 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":37 163 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":46 165 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":47 167 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":48 168 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":49 169 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":50 16A text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":51 16B text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":56 16C text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":58 16D text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":60 16E text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":63 16F text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":64 172 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":65 174 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":66 175 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":68 177 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":69 178 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/user.c":70 179 text6 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":75 17A text1 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":77 18B text1 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/uso_crc_maestro.c":82 18F text1 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":8 190 text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":9 192 text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":10 198 text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":9 199 text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":12 19A text3 CODE
+"/opt/microchip/xc8/v1.21/sources/common/strlen.c":13 1A0 text3 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":28 1A1 text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":39 1A3 text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":40 1A5 text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":58 1A7 text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":59 1A9 text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":60 1AA text5 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/system.c":20 1AB text7 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/system.c":26 1AD text7 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":70 1AE text9 CODE
+"/home/fernando/MPLABXProjects/Interruptor_Inalambrico_RS232/interruptor_Inalambrico_Esclavo_RS232.X/usart1.c":71 1AF text9 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_RB0 30 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 78 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 18 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_isr F0 0 CODE 0 text8 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_TMR0 1 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_main 250 0 CODE 0 maintext dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+btemp 7E 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+start 18 0 CODE 0 init /tmp/cgt8Q6s9F.obj
+_CRC16 1AE 0 CODE 0 text4 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+calcula_CRC16@i 42 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+CRC16@init_value 24 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_RCREG 1A 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_TRISA 85 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+strlen@cp 24 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_TRISB 86 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_PORTA 5 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgt8Q6s9F.obj
+_PORTB 6 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_SPBRG 99 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_CMCON 1F 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+CRC16@exit_value 28 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+calcula_CRC16@datos 3F 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+CRC16@res 31 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_getch 35C 0 CODE 0 text9 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+?_CRC16 20 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+calcula_CRC16@polinomio 35 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_PCONbits 8E 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_strlen 342 0 CODE 0 text3 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_calcula_mensaje_crc 320 0 CODE 0 text1 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+CRC16@i 2D 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_pasaron_20ms 77 0 COMMON 1 bssCOMMON dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_cadenarecibida 4E 0 BANK0 1 bssBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_configura_USART 342 0 CODE 0 text5 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_recibi_datos 4D 0 BANK0 1 bssBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_ConfigureOscillator 35C 0 CODE 0 text7 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_strlen 320 0 CODE 0 text3 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+saved_w 7E 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hinit 18 0 CODE 0 init -
+__Linit 18 0 CODE 0 init -
+__end_of_main 2B2 0 CODE 0 maintext dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization 2E 0 CODE 0 cinit dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_RCSTAbits 18 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_PORTBbits 6 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+calcula_mensaje_crc@CRC 48 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+?_calcula_mensaje_crc 44 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+CRC16@poly 20 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - /tmp/cgt8Q6s9F.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext0 0 0 CODE 0 text0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext1 2F4 0 CODE 0 text1 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_configura_USART 356 0 CODE 0 text5 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext2 32 0 CODE 0 text2 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext3 320 0 CODE 0 text3 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext4 1AE 0 CODE 0 text4 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext5 342 0 CODE 0 text5 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext6 2B2 0 CODE 0 text6 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext7 356 0 CODE 0 text7 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_calcula_CRC16 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext8 F0 0 CODE 0 text8 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_calcula_CRC16 F0 0 CODE 0 text2 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__ptext9 35C 0 CODE 0 text9 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of_InitApp 2F4 0 CODE 0 text6 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_getch 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of__initialization 2E 0 CODE 0 cinit dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+CRC16@value 2C 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+strlen@s 23 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+_InitApp 2B2 0 CODE 0 text6 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_isr 1AE 0 CODE 0 text8 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+?_strlen 20 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hcinit 32 0 CODE 0 cinit -
+__Lcinit 1A 0 CODE 0 cinit -
+__size_of_ConfigureOscillator 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+isr@datosrecibidos 75 0 COMMON 1 cstackCOMMON dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 4C 0 BANK0 1 bssBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hpa_nodes 0 0 ABS 0 pa_nodes -
+__Lpa_nodes 0 0 ABS 0 pa_nodes -
+_calcula_mensaje_crc 2F4 0 CODE 0 text1 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_getch 360 0 CODE 0 text9 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_Bandera_estado_llave 4C 0 BANK0 1 bssBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hend_init 1A 0 CODE 0 end_init -
+__Lend_init 18 0 CODE 0 end_init -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+calcula_CRC16@inival 39 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+calcula_CRC16@aux 40 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_InitApp 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+?_calcula_CRC16 35 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgt8Q6s9F.obj
+__size_of_CRC16 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+start_initialization 1A 0 CODE 0 cinit dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_configura_USART 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 250 0 CODE 0 maintext dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_calcula_CRC16 32 0 CODE 0 text2 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__end_of_CRC16 250 0 CODE 0 text4 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__initialization 1A 0 CODE 0 cinit dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+calcula_mensaje_crc@packet_ptr 47 0 BANK0 1 cstackBANK0 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_indice_de_dato 76 0 COMMON 1 bssCOMMON dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__size_of_calcula_mensaje_crc 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+_ConfigureOscillator 356 0 CODE 0 text7 dist/16f628A/production/interruptor_Inalambrico_Esclavo_RS232.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2 CODE
+intentry 0 4 8 1AC 2 CODE
+config 0 2007 400E 1 2 CONFIG
+cstackCOMMON 1 70 70 8 1 COMMON
+cstackBANK0 1 20 20 34 1 BANK0
