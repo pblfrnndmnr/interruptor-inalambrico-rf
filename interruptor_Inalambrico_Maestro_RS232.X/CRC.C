@@ -18,7 +18,7 @@
 //// permission.  Derivative programs created using this software    ////
 //// in object code form are not restricted in any way.              ////
 /////////////////////////////////////////////////////////////////////////
-
+//
 #define CRC_16    0x8005      //bit pattern (1)1000 0000 0000 0101
 #define CRC_CCITT 0x1021      //bit pattern (1)0001 0000 0010 0001
 #define CRC_32    0x04C11DB7  //bit pattern (1)0000 0100 1100 0001 0001 1101 1011 0111
