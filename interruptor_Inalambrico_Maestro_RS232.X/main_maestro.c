@@ -8,7 +8,7 @@
  a traves del puerto USART
  Cuando se pulsa el boton de encendido, se enciende el modulo RF, se esperan
  como mínimo 40us y luego se envian al USART los datos codificados medante codigo
-  TODO "Manchester u otro mejor" , una vez que finaliza se deshabilita el modulo y entra en un SLEEP
+ "Manchester u otro mejor" , una vez que finaliza se deshabilita el modulo y entra en un SLEEP
   hasta que se pulse nuevamente.*/
 /******************************************************************************/
 
@@ -19,7 +19,6 @@
 #ifndef __PICCPRO__
 #define __PICCPRO__
 #endif
-
 #if defined(__XC)
     #include <xc.h>         /* XC8 General Include File */
 #elif defined(HI_TECH_C)
