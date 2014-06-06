@@ -1,0 +1,48 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'GERBVIEW.LYT'.
+CADCAM generated at 14:27:15 on lunes, 26 de mayo de 2014.
+
+File List
+---------
+Top Copper              : Panelizado - CADCAM Top Copper.TXT
+Bottom Copper           : Panelizado - CADCAM Bottom Copper.TXT
+Top Silk Screen         : Panelizado - CADCAM Top Silk Screen.TXT
+Top Solder Resist       : Panelizado - CADCAM Top Solder Resist.TXT
+Bottom Solder Resist    : Panelizado - CADCAM Bottom Solder Resist.TXT
+Mechanical 1            : Panelizado - CADCAM Mechanical 1.TXT
+Drill                   : Panelizado - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+D10	CIRCLE	D=8th                                       DRAW
+D11	DIL	W=60th                H=100th               FLASH
+D12	CIRCLE	D=70th                                      FLASH
+D13	CIRCLE	D=80th                                      FLASH
+D14	DIL	W=100th               H=60th                FLASH
+D15	CIRCLE	D=90th                                      FLASH
+D16	CIRCLE	D=120th                                     FLASH
+D17	CIRCLE	D=40th                                      DRAW
+D18	CIRCLE	D=20th                                      DRAW
+D19	CIRCLE	D=2.5th                                     DRAW
+D70	DIL	W=80th                H=120th               FLASH
+D71	CIRCLE	D=100th                                     FLASH
+D20	DIL	W=120th               H=80th                FLASH
+D21	CIRCLE	D=110th                                     FLASH
+D22	CIRCLE	D=140th                                     FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	30th (0-15)
+
+
+[END OF FILE]

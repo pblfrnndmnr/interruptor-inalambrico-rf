@@ -1,0 +1,14 @@
+
+--Esta línea y las que están debajo serán ignoradas--
+
+M    Interruptor_inalambrico_USART_Maestro.dsn
+M    funclist
+M    interrupts_maestro.c
+M    l.obj
+M    main_maestro.c
+M    nbproject/Makefile-16f628A-Maestro.mk
+M    nbproject/Makefile-local-16f628A-Maestro.mk
+D    nbproject/Makefile-variables.mk
+M    nbproject/configurations.xml
+M    usart1_maestro.c
+M    user_maestro.c

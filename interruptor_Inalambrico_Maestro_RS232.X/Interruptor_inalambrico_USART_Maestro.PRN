@@ -1,0 +1,8374 @@
+%!PS-Adobe-3.0
+%cupsJobTicket: media=A4
+%cupsJobTicket: sides=one-sided
+%%Creator: Wine PostScript Driver
+%%Title: ARES Professional - Z:\home\fernando\MPLABXProjects\Interruptor_Inalambrico_RS232\interruptor_Inalambrico_Maestro_RS232.X\Interr
+%%BoundingBox: 18 36 576 805
+%%Pages: (atend)
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+/tmpmtrx matrix def
+/hatch {
+  pathbbox
+  /b exch def /r exch def /t exch def /l exch def /gap 32 def
+  l cvi gap idiv gap mul
+  gap
+  r cvi gap idiv gap mul
+  {t moveto 0 b t sub rlineto}
+  for
+} bind def
+/B {pop pop pop pop} def
+/N {newpath} def
+/havetype42gdir {version cvi 2015 ge} bind def
+%%EndProlog
+%%BeginSetup
+mark {
+%%BeginFeature: *PageSize A4
+<</PageSize[595 842]/ImagingBBox null>>setpagedevice
+%%EndFeature
+} stopped cleartomark
+mark {
+%%BeginFeature: *Duplex None
+<</Duplex false>>setpagedevice
+%%EndFeature
+} stopped cleartomark
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+/pgsave save def
+72 600 div 72 600 div scale
+150 6716 translate
+1 -1 scale
+0 rotate
+%%EndPageSetup
+gsave
+6 6 1453 1813 rectclip
+gsave
+6 6 moveto
+1453 0 rlineto
+0 1813 rlineto
+-1453 0 rlineto
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+grestore
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 856 moveto
+998 945 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1485 moveto
+669 1395 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1485 moveto
+729 1485 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+549 1395 moveto
+549 1455 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+489 1095 moveto
+489 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1118 1155 moveto
+1118 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1118 1065 moveto
+1058 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1058 1005 moveto
+998 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+309 1005 moveto
+309 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+309 1065 moveto
+339 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+339 1095 moveto
+369 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1095 moveto
+399 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+399 1095 moveto
+489 1185 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+489 1185 moveto
+489 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1605 moveto
+669 1485 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+908 1695 moveto
+908 1605 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+549 1695 moveto
+848 1695 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+549 1695 moveto
+549 1575 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1515 moveto
+219 1575 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1575 moveto
+309 1575 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1515 moveto
+219 1515 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1305 moveto
+219 1275 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+549 1455 moveto
+309 1455 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+309 1455 moveto
+219 1365 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1365 moveto
+219 1305 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1215 moveto
+729 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+639 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1215 moveto
+669 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 766 moveto
+818 763 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 766 moveto
+219 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 766 moveto
+129 856 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+129 856 moveto
+129 1605 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+129 1605 moveto
+219 1695 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1695 moveto
+549 1695 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+639 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 1275 moveto
+219 945 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+219 945 moveto
+279 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+279 886 moveto
+519 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1215 moveto
+669 1155 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+669 1155 moveto
+699 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+699 1095 moveto
+699 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+758 886 moveto
+758 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+758 1095 moveto
+729 1155 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1155 moveto
+729 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+639 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+579 1065 moveto
+579 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+579 1095 moveto
+609 1125 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+609 1125 moveto
+609 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+489 1095 moveto
+549 1155 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+549 1155 moveto
+549 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+908 1005 moveto
+908 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+579 766 moveto
+429 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 766 moveto
+579 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+579 886 moveto
+579 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+908 766 moveto
+830 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 766 moveto
+818 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+579 886 moveto
+579 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 945 moveto
+1238 1155 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 736 moveto
+1208 736 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1208 736 moveto
+1238 766 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 766 moveto
+1238 945 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 1215 moveto
+1208 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1208 1215 moveto
+1178 1185 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 1185 moveto
+1178 1095 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1118 1395 moveto
+1118 1335 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1118 1335 moveto
+998 1215 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+788 1395 moveto
+788 1545 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+848 1395 moveto
+848 1485 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1088 1485 moveto
+1133 1485 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1133 1485 moveto
+1178 1440 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 1440 moveto
+1178 1335 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1058 646 moveto
+1118 646 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1118 646 moveto
+1178 706 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 706 moveto
+1178 736 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+938 1065 moveto
+908 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+938 1065 moveto
+998 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1028 1545 moveto
+1028 1365 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1305 moveto
+938 1275 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+938 1275 moveto
+938 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+908 766 moveto
+998 676 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+24 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 676 moveto
+998 646 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+99 136 moveto
+69 166 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+69 166 moveto
+69 1725 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+69 1725 moveto
+99 1755 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+99 1755 moveto
+1298 1755 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1298 1755 moveto
+1328 1725 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1328 1725 moveto
+1328 166 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1328 166 moveto
+1298 136 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1298 136 moveto
+99 136 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1103 613 moveto
+1131 613 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1131 613 moveto
+1211 693 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1211 693 moveto
+1211 702 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1211 702 moveto
+1212 703 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1212 703 moveto
+1221 703 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1221 703 moveto
+1271 753 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1271 753 moveto
+1271 919 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1271 919 moveto
+1280 928 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1280 928 moveto
+1280 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1280 963 moveto
+1271 972 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1271 972 moveto
+1271 1125 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1271 1125 moveto
+1283 1137 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1283 1137 moveto
+1283 1174 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1283 1174 moveto
+1269 1188 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1269 1188 moveto
+1280 1198 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1280 1198 moveto
+1280 1233 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1280 1233 moveto
+1255 1257 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1255 1257 moveto
+1220 1257 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1220 1257 moveto
+1211 1248 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1211 1248 moveto
+1194 1248 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1194 1248 moveto
+1145 1199 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1145 1199 moveto
+1145 1192 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1145 1192 moveto
+1136 1200 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1136 1200 moveto
+1099 1200 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1099 1200 moveto
+1073 1174 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1073 1174 moveto
+1073 1137 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1073 1137 moveto
+1085 1125 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1085 1125 moveto
+1085 1079 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1085 1079 moveto
+1049 1043 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1049 1043 moveto
+1049 1104 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1049 1104 moveto
+971 1104 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+971 1104 moveto
+971 1183 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+971 1183 moveto
+980 1173 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+980 1173 moveto
+1015 1173 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1015 1173 moveto
+1040 1198 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1040 1198 moveto
+1040 1211 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1040 1211 moveto
+1139 1310 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1139 1310 moveto
+1159 1290 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1159 1290 moveto
+1196 1290 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1196 1290 moveto
+1223 1317 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1223 1317 moveto
+1223 1354 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1223 1354 moveto
+1211 1366 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1211 1366 moveto
+1211 1454 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1211 1454 moveto
+1146 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1146 1518 moveto
+1114 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1114 1518 moveto
+1105 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1105 1527 moveto
+1070 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1070 1527 moveto
+1061 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1061 1518 moveto
+1061 1519 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1061 1519 moveto
+1070 1528 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1070 1528 moveto
+1070 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1070 1563 moveto
+1045 1587 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1045 1587 moveto
+1010 1587 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1010 1587 moveto
+986 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+986 1563 moveto
+986 1528 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+986 1528 moveto
+995 1519 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+995 1519 moveto
+995 1396 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+995 1396 moveto
+983 1384 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+983 1384 moveto
+983 1350 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+983 1350 moveto
+949 1350 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+949 1350 moveto
+923 1324 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+923 1324 moveto
+923 1307 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+923 1307 moveto
+905 1289 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+905 1289 moveto
+905 1098 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+905 1098 moveto
+894 1098 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+894 1098 moveto
+875 1079 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+875 1079 moveto
+875 1032 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+875 1032 moveto
+866 1023 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+866 1023 moveto
+866 988 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+866 988 moveto
+890 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 963 moveto
+925 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+925 963 moveto
+947 985 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+947 985 moveto
+947 907 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+947 907 moveto
+965 907 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+965 907 moveto
+965 901 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+965 901 moveto
+953 901 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+953 901 moveto
+953 811 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+953 811 moveto
+1043 811 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1043 811 moveto
+1043 901 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1043 901 moveto
+1031 901 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1031 901 moveto
+1031 907 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1031 907 moveto
+1049 907 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1049 907 moveto
+1049 972 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1049 972 moveto
+1071 972 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1071 972 moveto
+1151 1052 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1151 1052 moveto
+1151 1059 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1151 1059 moveto
+1159 1050 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1159 1050 moveto
+1196 1050 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1196 1050 moveto
+1205 1059 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1205 1059 moveto
+1205 972 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1205 972 moveto
+1196 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1196 963 moveto
+1196 928 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1196 928 moveto
+1205 919 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1205 919 moveto
+1205 780 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1205 780 moveto
+1203 779 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1203 779 moveto
+1197 784 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1197 784 moveto
+1158 784 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1158 784 moveto
+1130 756 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1130 756 moveto
+1130 717 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1130 717 moveto
+1135 711 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1135 711 moveto
+1104 679 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1104 679 moveto
+1103 679 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1103 679 moveto
+1103 691 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1103 691 moveto
+1029 691 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1029 691 moveto
+950 771 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+950 771 moveto
+950 784 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+950 784 moveto
+925 808 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+925 808 moveto
+890 808 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 808 moveto
+881 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+881 799 moveto
+844 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+844 799 moveto
+835 808 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+835 808 moveto
+800 808 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+800 808 moveto
+791 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 799 moveto
+612 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+612 799 moveto
+612 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+612 835 moveto
+618 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+618 835 moveto
+618 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+618 936 moveto
+612 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+612 936 moveto
+612 1039 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+612 1039 moveto
+621 1048 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+621 1048 moveto
+621 1083 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+621 1083 moveto
+617 1087 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+617 1087 moveto
+642 1112 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+642 1112 moveto
+642 1136 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+642 1136 moveto
+666 1088 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+666 1088 moveto
+666 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+666 936 moveto
+660 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+660 936 moveto
+660 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+660 835 moveto
+857 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+857 835 moveto
+857 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+857 936 moveto
+791 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 936 moveto
+791 1090 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 1090 moveto
+793 1098 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+793 1098 moveto
+791 1103 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 1103 moveto
+791 1109 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 1109 moveto
+785 1115 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+785 1115 moveto
+761 1163 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+761 1163 moveto
+761 1164 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+761 1164 moveto
+887 1164 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+887 1164 moveto
+887 1266 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+887 1266 moveto
+330 1266 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+330 1266 moveto
+330 1164 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+330 1164 moveto
+421 1164 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+421 1164 moveto
+392 1136 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+392 1136 moveto
+387 1140 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+387 1140 moveto
+350 1140 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+350 1140 moveto
+338 1128 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+338 1128 moveto
+325 1128 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+325 1128 moveto
+276 1079 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+276 1079 moveto
+276 1032 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+276 1032 moveto
+267 1023 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+267 1023 moveto
+267 988 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+267 988 moveto
+291 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+291 963 moveto
+326 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+326 963 moveto
+351 988 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+351 988 moveto
+351 1023 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+351 1023 moveto
+342 1032 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+342 1032 moveto
+342 1052 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+342 1052 moveto
+345 1055 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+345 1055 moveto
+350 1050 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+350 1050 moveto
+387 1050 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+387 1050 moveto
+399 1062 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+399 1062 moveto
+412 1062 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+412 1062 moveto
+444 1094 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+444 1094 moveto
+444 1077 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+444 1077 moveto
+456 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+456 1065 moveto
+456 1032 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+456 1032 moveto
+447 1023 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+447 1023 moveto
+447 988 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+447 988 moveto
+471 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+471 963 moveto
+506 963 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+506 963 moveto
+531 988 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+531 988 moveto
+531 1023 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+531 1023 moveto
+522 1032 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+522 1032 moveto
+522 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+522 1065 moveto
+534 1077 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+534 1077 moveto
+534 1094 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+534 1094 moveto
+546 1106 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 1106 moveto
+546 1092 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 1092 moveto
+537 1083 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+537 1083 moveto
+537 1048 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+537 1048 moveto
+546 1039 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 1039 moveto
+546 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 936 moveto
+480 936 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+480 936 moveto
+480 918 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+480 918 moveto
+292 918 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+292 918 moveto
+252 959 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+252 959 moveto
+252 1249 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+252 1249 moveto
+261 1258 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+261 1258 moveto
+261 1293 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+261 1293 moveto
+252 1302 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+252 1302 moveto
+252 1352 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+252 1352 moveto
+322 1422 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+322 1422 moveto
+330 1422 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+330 1422 moveto
+330 1344 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+330 1344 moveto
+588 1344 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+588 1344 moveto
+588 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+588 1446 moveto
+582 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+582 1446 moveto
+582 1469 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+582 1469 moveto
+562 1488 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+562 1488 moveto
+401 1488 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+401 1488 moveto
+411 1498 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+411 1498 moveto
+411 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+411 1533 moveto
+386 1557 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+386 1557 moveto
+351 1557 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+351 1557 moveto
+342 1548 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+342 1548 moveto
+341 1548 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+341 1548 moveto
+351 1558 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+351 1558 moveto
+351 1593 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+351 1593 moveto
+326 1617 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+326 1617 moveto
+291 1617 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+291 1617 moveto
+282 1608 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+282 1608 moveto
+205 1608 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+205 1608 moveto
+186 1589 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 1589 moveto
+186 1542 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 1542 moveto
+177 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+177 1533 moveto
+177 1498 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+177 1498 moveto
+201 1473 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+201 1473 moveto
+236 1473 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+236 1473 moveto
+245 1482 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+245 1482 moveto
+289 1482 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+289 1482 moveto
+186 1379 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 1379 moveto
+186 1302 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 1302 moveto
+177 1293 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+177 1293 moveto
+177 1258 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+177 1258 moveto
+186 1249 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 1249 moveto
+186 932 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+186 932 moveto
+265 853 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+265 853 moveto
+480 853 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+480 853 moveto
+480 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+480 835 moveto
+546 835 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 835 moveto
+546 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+546 799 moveto
+476 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+476 799 moveto
+452 823 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+452 823 moveto
+405 823 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+405 823 moveto
+381 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+381 799 moveto
+232 799 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+232 799 moveto
+162 870 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+162 870 moveto
+162 1592 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+162 1592 moveto
+232 1662 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+232 1662 moveto
+516 1662 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+516 1662 moveto
+516 1602 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+516 1602 moveto
+507 1593 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+507 1593 moveto
+507 1558 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+507 1558 moveto
+531 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+531 1533 moveto
+566 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+566 1533 moveto
+591 1558 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+591 1558 moveto
+591 1593 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+591 1593 moveto
+582 1602 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+582 1602 moveto
+582 1662 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+582 1662 moveto
+809 1662 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+809 1662 moveto
+809 1644 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+809 1644 moveto
+875 1644 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+875 1644 moveto
+875 1632 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+875 1632 moveto
+866 1623 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+866 1623 moveto
+866 1588 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+866 1588 moveto
+890 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 1563 moveto
+925 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+925 1563 moveto
+950 1588 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+950 1588 moveto
+950 1623 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+950 1623 moveto
+941 1632 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+941 1632 moveto
+941 1644 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+941 1644 moveto
+947 1644 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+947 1644 moveto
+947 1746 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+947 1746 moveto
+809 1746 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+809 1746 moveto
+809 1728 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+809 1728 moveto
+205 1728 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+205 1728 moveto
+96 1619 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+96 1619 moveto
+96 843 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+96 843 moveto
+205 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+205 733 moveto
+381 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+381 733 moveto
+405 709 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+405 709 moveto
+452 709 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+452 709 moveto
+476 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+476 733 moveto
+791 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+791 733 moveto
+800 724 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+800 724 moveto
+835 724 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+835 724 moveto
+844 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+844 733 moveto
+881 733 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+881 733 moveto
+890 724 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 724 moveto
+903 724 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+903 724 moveto
+936 691 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+936 691 moveto
+893 691 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+893 691 moveto
+893 601 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+893 601 moveto
+1103 601 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1103 601 moveto
+1103 613 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+604 1407 moveto
+614 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+614 1407 moveto
+621 1400 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+621 1400 moveto
+621 1390 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+621 1390 moveto
+614 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+614 1383 moveto
+604 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+604 1383 moveto
+597 1390 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+597 1390 moveto
+597 1400 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+597 1400 moveto
+604 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+887 1446 moveto
+881 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+881 1446 moveto
+881 1459 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+881 1459 moveto
+890 1468 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 1468 moveto
+890 1503 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+890 1503 moveto
+865 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+865 1527 moveto
+830 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 1527 moveto
+821 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+821 1518 moveto
+821 1519 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+821 1519 moveto
+830 1528 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 1528 moveto
+830 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 1563 moveto
+805 1587 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+805 1587 moveto
+770 1587 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+770 1587 moveto
+746 1563 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+746 1563 moveto
+746 1528 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+746 1528 moveto
+755 1519 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+755 1519 moveto
+755 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+755 1518 moveto
+745 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+745 1527 moveto
+711 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+711 1527 moveto
+702 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+702 1518 moveto
+702 1518 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+702 1518 moveto
+702 1579 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+702 1579 moveto
+711 1588 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+711 1588 moveto
+711 1623 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+711 1623 moveto
+686 1647 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+686 1647 moveto
+651 1647 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+651 1647 moveto
+627 1623 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 1623 moveto
+627 1588 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 1588 moveto
+636 1579 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+636 1579 moveto
+636 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+636 1446 moveto
+630 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+630 1446 moveto
+630 1344 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+630 1344 moveto
+887 1344 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+887 1344 moveto
+887 1446 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+634 1077 moveto
+644 1077 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+644 1077 moveto
+651 1070 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+651 1070 moveto
+651 1060 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+651 1060 moveto
+644 1053 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+644 1053 moveto
+634 1053 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+634 1053 moveto
+627 1060 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 1060 moveto
+627 1070 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 1070 moveto
+634 1077 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+424 1527 moveto
+434 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+434 1527 moveto
+441 1520 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+441 1520 moveto
+441 1510 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+441 1510 moveto
+434 1503 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+434 1503 moveto
+424 1503 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+424 1503 moveto
+417 1510 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+417 1510 moveto
+417 1520 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+417 1520 moveto
+424 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+634 898 moveto
+644 898 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+644 898 moveto
+651 891 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+651 891 moveto
+651 881 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+651 881 moveto
+644 874 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+644 874 moveto
+634 874 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+634 874 moveto
+627 881 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 881 moveto
+627 891 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+627 891 moveto
+634 898 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+724 1557 moveto
+733 1557 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+733 1557 moveto
+740 1550 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+740 1550 moveto
+740 1540 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+740 1540 moveto
+733 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+733 1533 moveto
+724 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+724 1533 moveto
+717 1540 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+717 1540 moveto
+717 1550 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+717 1550 moveto
+724 1557 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+963 1707 moveto
+973 1707 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+973 1707 moveto
+980 1700 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+980 1700 moveto
+980 1690 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+980 1690 moveto
+973 1683 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+973 1683 moveto
+963 1683 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+963 1683 moveto
+956 1690 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+956 1690 moveto
+956 1700 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+956 1700 moveto
+963 1707 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+963 1437 moveto
+973 1437 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+973 1437 moveto
+980 1430 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+980 1430 moveto
+980 1420 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+980 1420 moveto
+973 1413 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+973 1413 moveto
+963 1413 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+963 1413 moveto
+956 1420 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+956 1420 moveto
+956 1430 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+956 1430 moveto
+963 1437 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+813 718 moveto
+823 718 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+823 718 moveto
+830 711 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 711 moveto
+830 701 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+830 701 moveto
+823 694 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+823 694 moveto
+813 694 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+813 694 moveto
+806 701 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+806 701 moveto
+806 711 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+806 711 moveto
+813 718 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+993 1137 moveto
+1003 1137 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1003 1137 moveto
+1010 1130 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1010 1130 moveto
+1010 1120 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1010 1120 moveto
+1003 1113 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1003 1113 moveto
+993 1113 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+993 1113 moveto
+986 1120 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+986 1120 moveto
+986 1130 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+986 1130 moveto
+993 1137 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1173 957 moveto
+1183 957 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1183 957 moveto
+1190 950 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1190 950 moveto
+1190 940 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1190 940 moveto
+1183 933 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1183 933 moveto
+1173 933 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1173 933 moveto
+1166 940 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1166 940 moveto
+1166 950 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1166 950 moveto
+1173 957 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1171 834 moveto
+1184 834 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1184 834 moveto
+1193 825 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1193 825 moveto
+1193 813 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1193 813 moveto
+1184 804 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1184 804 moveto
+1171 804 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1171 804 moveto
+1163 813 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1163 813 moveto
+1163 825 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1163 825 moveto
+1171 834 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+424 1017 moveto
+434 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+434 1017 moveto
+441 1010 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+441 1010 moveto
+441 1000 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+441 1000 moveto
+434 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+434 993 moveto
+424 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+424 993 moveto
+417 1000 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+417 1000 moveto
+417 1010 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+417 1010 moveto
+424 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+364 1017 moveto
+374 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+374 1017 moveto
+381 1010 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+381 1010 moveto
+381 1000 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+381 1000 moveto
+374 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+374 993 moveto
+364 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+364 993 moveto
+357 1000 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+357 1000 moveto
+357 1010 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+357 1010 moveto
+364 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1233 1407 moveto
+1243 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1243 1407 moveto
+1250 1400 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1250 1400 moveto
+1250 1390 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1250 1390 moveto
+1243 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1243 1383 moveto
+1233 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1233 1383 moveto
+1226 1390 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1226 1390 moveto
+1226 1400 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1226 1400 moveto
+1233 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+420 315 moveto
+437 315 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+437 315 moveto
+450 303 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+450 303 moveto
+450 285 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+450 285 moveto
+437 273 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+437 273 moveto
+420 273 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+420 273 moveto
+408 285 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+408 285 moveto
+408 303 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+408 303 moveto
+420 315 lineto
+stroke
+grestore
+gsave
+6 6 1453 1813 rectclip
+99 136 moveto
+69 166 lineto
+69 1725 lineto
+99 1755 lineto
+1298 1755 lineto
+1328 1725 lineto
+1328 166 lineto
+1298 136 lineto
+closepath
+1103 613 moveto
+1131 613 lineto
+1211 693 lineto
+1211 702 lineto
+1212 703 lineto
+1221 703 lineto
+1271 753 lineto
+1271 919 lineto
+1280 928 lineto
+1280 963 lineto
+1271 972 lineto
+1271 1125 lineto
+1283 1137 lineto
+1283 1174 lineto
+1269 1188 lineto
+1280 1198 lineto
+1280 1233 lineto
+1255 1257 lineto
+1220 1257 lineto
+1211 1248 lineto
+1194 1248 lineto
+1145 1199 lineto
+1145 1192 lineto
+1136 1200 lineto
+1099 1200 lineto
+1073 1174 lineto
+1073 1137 lineto
+1085 1125 lineto
+1085 1079 lineto
+1049 1043 lineto
+1049 1104 lineto
+971 1104 lineto
+971 1183 lineto
+980 1173 lineto
+1015 1173 lineto
+1040 1198 lineto
+1040 1211 lineto
+1139 1310 lineto
+1159 1290 lineto
+1196 1290 lineto
+1223 1317 lineto
+1223 1354 lineto
+1211 1366 lineto
+1211 1454 lineto
+1146 1518 lineto
+1114 1518 lineto
+1105 1527 lineto
+1070 1527 lineto
+1061 1518 lineto
+1061 1519 lineto
+1070 1528 lineto
+1070 1563 lineto
+1045 1587 lineto
+1010 1587 lineto
+986 1563 lineto
+986 1528 lineto
+995 1519 lineto
+995 1396 lineto
+983 1384 lineto
+983 1350 lineto
+949 1350 lineto
+923 1324 lineto
+923 1307 lineto
+905 1289 lineto
+905 1098 lineto
+894 1098 lineto
+875 1079 lineto
+875 1032 lineto
+866 1023 lineto
+866 988 lineto
+890 963 lineto
+925 963 lineto
+947 985 lineto
+947 907 lineto
+965 907 lineto
+965 901 lineto
+953 901 lineto
+953 811 lineto
+1043 811 lineto
+1043 901 lineto
+1031 901 lineto
+1031 907 lineto
+1049 907 lineto
+1049 972 lineto
+1071 972 lineto
+1151 1052 lineto
+1151 1059 lineto
+1159 1050 lineto
+1196 1050 lineto
+1205 1059 lineto
+1205 972 lineto
+1196 963 lineto
+1196 928 lineto
+1205 919 lineto
+1205 780 lineto
+1203 779 lineto
+1197 784 lineto
+1158 784 lineto
+1130 756 lineto
+1130 717 lineto
+1135 711 lineto
+1104 679 lineto
+1103 679 lineto
+1103 691 lineto
+1029 691 lineto
+950 771 lineto
+950 784 lineto
+925 808 lineto
+890 808 lineto
+881 799 lineto
+844 799 lineto
+835 808 lineto
+800 808 lineto
+791 799 lineto
+612 799 lineto
+612 835 lineto
+618 835 lineto
+618 936 lineto
+612 936 lineto
+612 1039 lineto
+621 1048 lineto
+621 1083 lineto
+617 1087 lineto
+642 1112 lineto
+642 1136 lineto
+666 1088 lineto
+666 936 lineto
+660 936 lineto
+660 835 lineto
+857 835 lineto
+857 936 lineto
+791 936 lineto
+791 1090 lineto
+793 1098 lineto
+791 1103 lineto
+791 1109 lineto
+785 1115 lineto
+761 1163 lineto
+761 1164 lineto
+887 1164 lineto
+887 1266 lineto
+330 1266 lineto
+330 1164 lineto
+421 1164 lineto
+392 1136 lineto
+387 1140 lineto
+350 1140 lineto
+338 1128 lineto
+325 1128 lineto
+276 1079 lineto
+276 1032 lineto
+267 1023 lineto
+267 988 lineto
+291 963 lineto
+326 963 lineto
+351 988 lineto
+351 1023 lineto
+342 1032 lineto
+342 1052 lineto
+345 1055 lineto
+350 1050 lineto
+387 1050 lineto
+399 1062 lineto
+412 1062 lineto
+444 1094 lineto
+444 1077 lineto
+456 1065 lineto
+456 1032 lineto
+447 1023 lineto
+447 988 lineto
+471 963 lineto
+506 963 lineto
+531 988 lineto
+531 1023 lineto
+522 1032 lineto
+522 1065 lineto
+534 1077 lineto
+534 1094 lineto
+546 1106 lineto
+546 1092 lineto
+537 1083 lineto
+537 1048 lineto
+546 1039 lineto
+546 936 lineto
+480 936 lineto
+480 918 lineto
+292 918 lineto
+252 959 lineto
+252 1249 lineto
+261 1258 lineto
+261 1293 lineto
+252 1302 lineto
+252 1352 lineto
+322 1422 lineto
+330 1422 lineto
+330 1344 lineto
+588 1344 lineto
+588 1446 lineto
+582 1446 lineto
+582 1469 lineto
+562 1488 lineto
+401 1488 lineto
+411 1498 lineto
+411 1533 lineto
+386 1557 lineto
+351 1557 lineto
+342 1548 lineto
+341 1548 lineto
+351 1558 lineto
+351 1593 lineto
+326 1617 lineto
+291 1617 lineto
+282 1608 lineto
+205 1608 lineto
+186 1589 lineto
+186 1542 lineto
+177 1533 lineto
+177 1498 lineto
+201 1473 lineto
+236 1473 lineto
+245 1482 lineto
+289 1482 lineto
+186 1379 lineto
+186 1302 lineto
+177 1293 lineto
+177 1258 lineto
+186 1249 lineto
+186 932 lineto
+265 853 lineto
+480 853 lineto
+480 835 lineto
+546 835 lineto
+546 799 lineto
+476 799 lineto
+452 823 lineto
+405 823 lineto
+381 799 lineto
+232 799 lineto
+162 870 lineto
+162 1592 lineto
+232 1662 lineto
+516 1662 lineto
+516 1602 lineto
+507 1593 lineto
+507 1558 lineto
+531 1533 lineto
+566 1533 lineto
+591 1558 lineto
+591 1593 lineto
+582 1602 lineto
+582 1662 lineto
+809 1662 lineto
+809 1644 lineto
+875 1644 lineto
+875 1632 lineto
+866 1623 lineto
+866 1588 lineto
+890 1563 lineto
+925 1563 lineto
+950 1588 lineto
+950 1623 lineto
+941 1632 lineto
+941 1644 lineto
+947 1644 lineto
+947 1746 lineto
+809 1746 lineto
+809 1728 lineto
+205 1728 lineto
+96 1619 lineto
+96 843 lineto
+205 733 lineto
+381 733 lineto
+405 709 lineto
+452 709 lineto
+476 733 lineto
+791 733 lineto
+800 724 lineto
+835 724 lineto
+844 733 lineto
+881 733 lineto
+890 724 lineto
+903 724 lineto
+936 691 lineto
+893 691 lineto
+893 601 lineto
+1103 601 lineto
+closepath
+604 1407 moveto
+614 1407 lineto
+621 1400 lineto
+621 1390 lineto
+614 1383 lineto
+604 1383 lineto
+597 1390 lineto
+597 1400 lineto
+closepath
+887 1446 moveto
+881 1446 lineto
+881 1459 lineto
+890 1468 lineto
+890 1503 lineto
+865 1527 lineto
+830 1527 lineto
+821 1518 lineto
+821 1519 lineto
+830 1528 lineto
+830 1563 lineto
+805 1587 lineto
+770 1587 lineto
+746 1563 lineto
+746 1528 lineto
+755 1519 lineto
+755 1518 lineto
+745 1527 lineto
+711 1527 lineto
+702 1518 lineto
+702 1518 lineto
+702 1579 lineto
+711 1588 lineto
+711 1623 lineto
+686 1647 lineto
+651 1647 lineto
+627 1623 lineto
+627 1588 lineto
+636 1579 lineto
+636 1446 lineto
+630 1446 lineto
+630 1344 lineto
+887 1344 lineto
+closepath
+634 1077 moveto
+644 1077 lineto
+651 1070 lineto
+651 1060 lineto
+644 1053 lineto
+634 1053 lineto
+627 1060 lineto
+627 1070 lineto
+closepath
+424 1527 moveto
+434 1527 lineto
+441 1520 lineto
+441 1510 lineto
+434 1503 lineto
+424 1503 lineto
+417 1510 lineto
+417 1520 lineto
+closepath
+634 898 moveto
+644 898 lineto
+651 891 lineto
+651 881 lineto
+644 874 lineto
+634 874 lineto
+627 881 lineto
+627 891 lineto
+closepath
+724 1557 moveto
+733 1557 lineto
+740 1550 lineto
+740 1540 lineto
+733 1533 lineto
+724 1533 lineto
+717 1540 lineto
+717 1550 lineto
+closepath
+963 1707 moveto
+973 1707 lineto
+980 1700 lineto
+980 1690 lineto
+973 1683 lineto
+963 1683 lineto
+956 1690 lineto
+956 1700 lineto
+closepath
+963 1437 moveto
+973 1437 lineto
+980 1430 lineto
+980 1420 lineto
+973 1413 lineto
+963 1413 lineto
+956 1420 lineto
+956 1430 lineto
+closepath
+813 718 moveto
+823 718 lineto
+830 711 lineto
+830 701 lineto
+823 694 lineto
+813 694 lineto
+806 701 lineto
+806 711 lineto
+closepath
+993 1137 moveto
+1003 1137 lineto
+1010 1130 lineto
+1010 1120 lineto
+1003 1113 lineto
+993 1113 lineto
+986 1120 lineto
+986 1130 lineto
+closepath
+1173 957 moveto
+1183 957 lineto
+1190 950 lineto
+1190 940 lineto
+1183 933 lineto
+1173 933 lineto
+1166 940 lineto
+1166 950 lineto
+closepath
+1171 834 moveto
+1184 834 lineto
+1193 825 lineto
+1193 813 lineto
+1184 804 lineto
+1171 804 lineto
+1163 813 lineto
+1163 825 lineto
+closepath
+424 1017 moveto
+434 1017 lineto
+441 1010 lineto
+441 1000 lineto
+434 993 lineto
+424 993 lineto
+417 1000 lineto
+417 1010 lineto
+closepath
+364 1017 moveto
+374 1017 lineto
+381 1010 lineto
+381 1000 lineto
+374 993 lineto
+364 993 lineto
+357 1000 lineto
+357 1010 lineto
+closepath
+1233 1407 moveto
+1243 1407 lineto
+1250 1400 lineto
+1250 1390 lineto
+1243 1383 lineto
+1233 1383 lineto
+1226 1390 lineto
+1226 1400 lineto
+closepath
+420 315 moveto
+437 315 lineto
+450 303 lineto
+450 285 lineto
+437 273 lineto
+420 273 lineto
+408 285 lineto
+408 303 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+609 1395 moveto
+597 1395 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+609 1395 moveto
+621 1395 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+609 1395 moveto
+609 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+609 1395 moveto
+609 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+627 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+651 1065 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+639 1077 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 1065 moveto
+639 1053 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1515 moveto
+417 1515 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1515 moveto
+441 1515 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1515 moveto
+429 1527 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1515 moveto
+429 1503 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 886 moveto
+627 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 886 moveto
+651 886 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 886 moveto
+639 898 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+639 886 moveto
+639 874 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1545 moveto
+717 1545 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1545 moveto
+740 1545 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1545 moveto
+729 1557 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+729 1545 moveto
+729 1533 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1695 moveto
+956 1695 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1695 moveto
+980 1695 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1695 moveto
+968 1707 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1695 moveto
+968 1683 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1425 moveto
+956 1425 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1425 moveto
+980 1425 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1425 moveto
+968 1437 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+968 1425 moveto
+968 1413 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 706 moveto
+806 706 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 706 moveto
+830 706 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 706 moveto
+818 718 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+818 706 moveto
+818 694 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 1125 moveto
+986 1125 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 1125 moveto
+1010 1125 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 1125 moveto
+998 1137 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+998 1125 moveto
+998 1113 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 945 moveto
+1166 945 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 945 moveto
+1190 945 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 945 moveto
+1178 957 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 945 moveto
+1178 933 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 819 moveto
+1163 819 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 819 moveto
+1193 819 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 819 moveto
+1178 834 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1178 819 moveto
+1178 804 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1005 moveto
+417 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1005 moveto
+441 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1005 moveto
+429 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 1005 moveto
+429 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1005 moveto
+357 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1005 moveto
+381 1005 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1005 moveto
+369 1017 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+369 1005 moveto
+369 993 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 1395 moveto
+1226 1395 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 1395 moveto
+1250 1395 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 1395 moveto
+1238 1407 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+1238 1395 moveto
+1238 1383 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 294 moveto
+408 294 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 294 moveto
+450 294 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 294 moveto
+429 315 lineto
+stroke
+grestore
+0.00 0.00 0.00 setrgbcolor
+6 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+gsave
+6 6 1453 1813 rectclip
+429 294 moveto
+429 273 lineto
+stroke
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+358 1365 moveto
+381 1365 lineto
+388 1372 lineto
+388 1419 lineto
+381 1426 lineto
+358 1426 lineto
+351 1419 lineto
+351 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+418 1365 moveto
+441 1365 lineto
+448 1372 lineto
+448 1419 lineto
+441 1426 lineto
+418 1426 lineto
+411 1419 lineto
+411 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+478 1365 moveto
+501 1365 lineto
+508 1372 lineto
+508 1419 lineto
+501 1426 lineto
+478 1426 lineto
+471 1419 lineto
+471 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+538 1365 moveto
+561 1365 lineto
+568 1372 lineto
+568 1419 lineto
+561 1426 lineto
+538 1426 lineto
+531 1419 lineto
+531 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+549 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+598 1365 moveto
+621 1365 lineto
+628 1372 lineto
+628 1419 lineto
+621 1426 lineto
+598 1426 lineto
+591 1419 lineto
+591 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+609 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+658 1365 moveto
+681 1365 lineto
+688 1372 lineto
+688 1419 lineto
+681 1426 lineto
+658 1426 lineto
+651 1419 lineto
+651 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+669 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+718 1365 moveto
+741 1365 lineto
+748 1372 lineto
+748 1419 lineto
+741 1426 lineto
+718 1426 lineto
+711 1419 lineto
+711 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+777 1365 moveto
+800 1365 lineto
+807 1372 lineto
+807 1419 lineto
+800 1426 lineto
+777 1426 lineto
+770 1419 lineto
+770 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+788 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+837 1365 moveto
+860 1365 lineto
+867 1372 lineto
+867 1419 lineto
+860 1426 lineto
+837 1426 lineto
+830 1419 lineto
+830 1372 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+848 1395 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+837 1185 moveto
+860 1185 lineto
+867 1192 lineto
+867 1239 lineto
+860 1246 lineto
+837 1246 lineto
+830 1239 lineto
+830 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+848 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+777 1185 moveto
+800 1185 lineto
+807 1192 lineto
+807 1239 lineto
+800 1246 lineto
+777 1246 lineto
+770 1239 lineto
+770 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+788 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+718 1185 moveto
+741 1185 lineto
+748 1192 lineto
+748 1239 lineto
+741 1246 lineto
+718 1246 lineto
+711 1239 lineto
+711 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+658 1185 moveto
+681 1185 lineto
+688 1192 lineto
+688 1239 lineto
+681 1246 lineto
+658 1246 lineto
+651 1239 lineto
+651 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+669 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+598 1185 moveto
+621 1185 lineto
+628 1192 lineto
+628 1239 lineto
+621 1246 lineto
+598 1246 lineto
+591 1239 lineto
+591 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+609 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+538 1185 moveto
+561 1185 lineto
+568 1192 lineto
+568 1239 lineto
+561 1246 lineto
+538 1246 lineto
+531 1239 lineto
+531 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+549 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+478 1185 moveto
+501 1185 lineto
+508 1192 lineto
+508 1239 lineto
+501 1246 lineto
+478 1246 lineto
+471 1239 lineto
+471 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+418 1185 moveto
+441 1185 lineto
+448 1192 lineto
+448 1239 lineto
+441 1246 lineto
+418 1246 lineto
+411 1239 lineto
+411 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+358 1185 moveto
+381 1185 lineto
+388 1192 lineto
+388 1239 lineto
+381 1246 lineto
+358 1246 lineto
+351 1239 lineto
+351 1192 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1215 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+639 1065 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+639 1065 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+579 1065 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+579 1065 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+549 1575 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+549 1575 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+309 1575 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+309 1575 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+219 1515 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+219 1515 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+219 1275 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+219 1275 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1515 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1515 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1515 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1515 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+508 856 moveto
+531 856 lineto
+538 863 lineto
+538 910 lineto
+531 917 lineto
+508 917 lineto
+501 910 lineto
+501 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+519 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+568 856 moveto
+591 856 lineto
+598 863 lineto
+598 910 lineto
+591 917 lineto
+568 917 lineto
+561 910 lineto
+561 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+579 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+628 856 moveto
+651 856 lineto
+658 863 lineto
+658 910 lineto
+651 917 lineto
+628 917 lineto
+621 910 lineto
+621 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+639 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+688 856 moveto
+711 856 lineto
+718 863 lineto
+718 910 lineto
+711 917 lineto
+688 917 lineto
+681 910 lineto
+681 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+699 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+747 856 moveto
+770 856 lineto
+777 863 lineto
+777 910 lineto
+770 917 lineto
+747 917 lineto
+740 910 lineto
+740 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+758 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+807 856 moveto
+830 856 lineto
+837 863 lineto
+837 910 lineto
+830 917 lineto
+807 917 lineto
+800 910 lineto
+800 863 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+818 886 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1545 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1545 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1485 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+729 1485 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+669 1605 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+669 1605 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 1605 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 1605 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+837 1665 moveto
+860 1665 lineto
+867 1672 lineto
+867 1719 lineto
+860 1726 lineto
+837 1726 lineto
+830 1719 lineto
+830 1672 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+848 1695 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+897 1665 moveto
+920 1665 lineto
+927 1672 lineto
+927 1719 lineto
+920 1726 lineto
+897 1726 lineto
+890 1719 lineto
+890 1672 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 1695 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+957 1665 moveto
+980 1665 lineto
+987 1672 lineto
+987 1719 lineto
+980 1726 lineto
+957 1726 lineto
+950 1719 lineto
+950 1672 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+968 1695 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1028 1545 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1028 1545 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+788 1545 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+788 1545 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 1005 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 1005 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 766 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+908 766 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+968 1305 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+968 1305 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1028 1365 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1028 1365 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+968 1425 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+968 1425 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+818 706 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+818 706 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+818 766 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+818 766 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+975 1107 moveto
+1022 1107 lineto
+1029 1114 lineto
+1029 1137 lineto
+1022 1144 lineto
+975 1144 lineto
+968 1137 lineto
+968 1114 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 1125 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+975 1047 moveto
+1022 1047 lineto
+1029 1054 lineto
+1029 1077 lineto
+1022 1084 lineto
+975 1084 lineto
+968 1077 lineto
+968 1054 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 1065 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+975 987 moveto
+1022 987 lineto
+1029 994 lineto
+1029 1017 lineto
+1022 1024 lineto
+975 1024 lineto
+968 1017 lineto
+968 994 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 1005 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%PolyPolygon
+gsave
+6 6 1453 1813 rectclip
+975 927 moveto
+1022 927 lineto
+1029 934 lineto
+1029 957 lineto
+1022 964 lineto
+975 964 lineto
+968 957 lineto
+968 934 lineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+eofill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 945 translate
+9 9 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+gsave
+6 6 1453 1813 rectclip
+974 832 moveto
+49 0 rlineto
+0 49 rlineto
+-49 0 rlineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 856 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 945 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 945 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 945 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 945 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 736 translate
+55 55 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 736 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 819 translate
+55 55 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 819 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1095 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1095 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1095 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1095 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1005 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 1005 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1005 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+489 1005 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+309 1005 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+309 1005 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1005 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+369 1005 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1118 1155 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1118 1155 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 1095 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 1095 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1155 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1155 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1118 1395 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1118 1395 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 1335 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1178 1335 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1395 translate
+49 49 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1395 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1088 1485 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1088 1485 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+848 1485 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+848 1485 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1215 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1238 1215 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 1215 translate
+43 43 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 1215 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 766 translate
+73 73 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 766 translate
+19 19 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 294 translate
+73 73 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+429 294 translate
+19 19 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+gsave
+6 6 1453 1813 rectclip
+914 622 moveto
+49 0 rlineto
+0 49 rlineto
+-49 0 rlineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+938 646 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+gsave
+6 6 1453 1813 rectclip
+974 622 moveto
+49 0 rlineto
+0 49 rlineto
+-49 0 rlineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+998 646 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+gsave
+6 6 1453 1813 rectclip
+1034 622 moveto
+49 0 rlineto
+0 49 rlineto
+-49 0 rlineto
+closepath
+gsave
+0.00 0.00 0.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+%Ellipse
+gsave
+6 6 1453 1813 rectclip
+newpath
+tmpmtrx currentmatrix pop
+1058 646 translate
+15 15 scale
+0 0 0.5 -360.0 -0.0 arc
+tmpmtrx setmatrix
+closepath
+gsave
+1.00 1.00 1.00 setrgbcolor
+fill
+grestore
+newpath
+grestore
+pgsave restore
+showpage
+%%Trailer
+%%Pages: 1
+%%EOF
