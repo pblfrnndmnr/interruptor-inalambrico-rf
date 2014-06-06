@@ -50,13 +50,16 @@ void interrupt isr(void)
   Bandera_boton_pulsado=true;
     }
     else{
-        /* if(PIR1bits.TXIF==1){
+        // if(PIR1bits.TXIF==1){
         // dato USART enviado
        //El bufer eta vacio se puede cargar nuevamente
        // bufervacio=true;
        // PIE1bits.TXIE=0; //deshabilito la interrupcion para no volver a entrar
         //PORTBbits.RB7=1;
-       // }//Transmision USART completa*/
+     //        asm("nop");
+     //   PIR1bits.TXIF==0;
+     //   PIE1bits.TXIE=0;
+     //    }//Transmision USART completa*/
     }
         
     

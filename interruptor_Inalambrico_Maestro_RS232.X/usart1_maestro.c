@@ -52,7 +52,7 @@ TXSTAbits.TX9D=1;// 9th bit of transmit data. Can be parity bit.
 TXSTAbits.TXEN=1; /*Transmit Enable bit(1)
 1 = Transmit enabled
 0 = Transmit disabled*/
-RCSTAbits.SPEN=1;/*Serial Port Enable bit
+RCSTAbits.SPEN=0;/*Dejo deshabilitado el puerto serie para ahorar energia, solo se habilita al momento de enviar datos
 (Configures RB1/RX/DT and RB2/TX/CK pins as serial port pins when bits TRISB<2:1> are set)
 1 = Serial port enabled
 0 = Serial port disabled*/

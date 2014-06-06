@@ -34,6 +34,7 @@
 #include "usart1_maestro.h"
 #include <string.h>
 #include "crc_maestro.h"
+#include "Manchester.h"
 /******************************************************************************/
 /* User Global Variable Declaration                                           */
 /******************************************************************************/
@@ -54,10 +55,15 @@ bool Bandera_boton_pulsado;
 ///////////////////////////////////////////////////////////////////////////////
 
 
+
 ///////////////////////////////////////////////////////////////////////////////
 
 void main(void)
 {
+
+   
+
+   // datoptr = &dato;  //el puntero "datoptr" apunta a la variable dato
     /* Configure the oscillator for the device */
     ConfigureOscillator();
    
@@ -68,16 +74,23 @@ void main(void)
     char enviaApagado[5]={DireccionDispositivo,Apagado,0x95,0xA4};//debo poner el crc al reves sino no da 0 al volver a calcularlo
  // calcula_mensaje_crc(enviaEncendido); //se transmite 1Y,0xD5,0xAA
    //calcula_mensaje_crc(enviaApagado);//se trnasmite 1N,0x95,0xA4
-    
-while(1)
+   // dato="125";
+ // int loco;
+  //loco=Manchester(0xFF);
+ //   printf("%c%c",(uint8_t)loco,(uint8_t)(loco>>8));
+    RB2=0;
+    RB1=0;
+    while(1)
     {
-
-        if (Bandera_boton_pulsado){   
+  // PIE1bits.TXIE=0;
+    if (Bandera_boton_pulsado){
          //Deshabilito la interrupcion del RB0
          INTCONbits.INTE=0;
          //Habilito transmisor
+       
+         RCSTAbits.SPEN=1;//habilito el puerto serie para transmitir los datos
          TransmisorON=1;
-         PORTBbits.RB5=1;
+         
          //Espero a que se inicie correctamente el transmisor minimo 1.5ms (no verificado)
          __delay_ms(2);
            //Habilito la transmision de datos
@@ -85,11 +98,10 @@ while(1)
          if (datos==Encendido){
              printf("\n%s\r", enviaEncendido);
          }else if(datos==Apagado){
-         printf("\n%s\r", enviaApagado);
-         }       
-        /*TODO Espero que se transmitan todos los datos a 2400b/seg, son 6 Bytes,
-        o sea 48 bits, tarda ~20ms*/
-        __delay_ms(20);
+           printf("\n%s\r", enviaApagado);
+         }
+        //Espero hasta que se transmita el ultimo byte testeando el TRMT//
+         while (!TRMT){}
         TransmisorON=0;
         Bandera_boton_pulsado=false;
         //Borro el flag de interrupcion
@@ -98,8 +110,13 @@ while(1)
         //Habilito nuevamente la interrupcion RB0
         INTCONbits.INTE=1;
         
-        
+//        RCSTAbits.SPEN=0;//Deshabilito el puerto serie para ahorrar energia
      }
+    
+    RCSTAbits.SPEN=0;//deshabilito el puerto serie para ahorrar energia
+    PORTBbits.RB2=0;//tambien debo poner el pin TX en 0 sino queda el transistor inversor en activo
+    
+     
      //Pongo a dormir al sistema hasta una nueva pulsación para ahorrar energia
      SLEEP();
     }

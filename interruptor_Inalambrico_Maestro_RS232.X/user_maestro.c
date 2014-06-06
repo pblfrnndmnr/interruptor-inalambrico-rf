@@ -41,7 +41,7 @@ void InitApp(void)
     OPTION_REGbits.PSA=0; ///Prescaler is assigned to the Timer0 module
     OPTION_REGbits.T0CS=0; //TMR0 Clock Source Select bit Internal
     OPTION_REGbits.T0SE=0; //TMR0 Source Edge Select bit (no usado ahora)
-    OPTION_REGbits.nRBPU=0; //Habilito las resistencias pullup del puerto B
+    OPTION_REGbits.nRBPU=1; //Deshabilito las resistencias pullup del puerto B, para no consumir corriente
 
     #ifdef UsaTecla
     //Para ver en que flanco debo detectar la pulsacion de RB0, testeo la entrada antes de elegirlo
@@ -58,8 +58,8 @@ void InitApp(void)
 
     INTCONbits.INTF=0; //Limpio el flag de interrupcion de RB0
     INTCONbits.INTE=1; //Habilito interrupcion RB0
-  //  PIE1bits.TXIE=1; //Habilito la interrupcion de transmision deUSART
-    //INTCONbits.PEIE=1; //habilito interrupcion de perifericos
+    //PIE1bits.TXIE=1; //Habilito la interrupcion de transmision deUSART
+ //   INTCONbits.PEIE=1; //habilito interrupcion de perifericos
     INTCONbits.GIE=1; //Habilito interrupciones globales
 
 }
