@@ -1,0 +1,1 @@
+Interruptor a través de red inalámbrica
